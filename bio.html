@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<link href='https://fonts.googleapis.com/css?family=Alata' rel='stylesheet'>
+<style media="screen">
+  @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
+
+  * {
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    list-style: none;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: #2C2626;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  body {
+    margin: 0px;
+  }
+
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  nav {
+    width: 100% auto;
+  }
+
+  /*top menu*/
+  .header nav {
+    text-align: center;
+    width: 100%;
+    background: #2C2626;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    z-index: 10;
+    display: block;
+    height: 2.7vw;
+  }
+
+  #primary_nav_wrap
+  {
+  	margin-top:0px;
+  }
+
+  #primary_nav_wrap ul
+  {
+  	list-style:none;
+  	position:absolute;
+  	float:left;
+  	margin:0;
+  	padding:0;
+    left: 65%;
+  }
+
+  #primary_nav_wrap ul a
+  {
+  	display:block;
+  	color:#FFFFFF;
+  	text-decoration:none;
+  	font-weight:100;
+  	font-size:1.4vw;
+  	line-height:32px;
+  	padding:0 17px;
+  	font-family: 'Alata';
+  }
+
+  #primary_nav_wrap ul li
+  {
+  	position:relative;
+  	float:left;
+  	margin:0;
+  	padding:0
+  }
+
+  #primary_nav_wrap ul li.current-menu-item
+  {
+  	text-decoration: underline;
+  }
+
+  #primary_nav_wrap ul li:hover
+  {
+  	text-decoration: underline;
+  }
+
+  #primary_nav_wrap ul ul
+  {
+  	display:none;
+  	position:absolute;
+  	top:100%;
+  	left:0;
+  	background:#2C2626;
+  	padding:0
+  }
+
+  #primary_nav_wrap ul ul li
+  {
+  	float:none;
+  	width:200px
+  }
+
+  #primary_nav_wrap ul ul a
+  {
+  	line-height:120%;
+  	padding:10px 15px
+  }
+
+  #primary_nav_wrap ul ul ul
+  {
+  	top:0;
+  	left:100%;
+  }
+
+  #primary_nav_wrap ul li:hover > ul
+  {
+  	display:block;
+  }
+
+  @media screen and (max-width: 769px) {
+    .header nav{
+      color: #333333;
+      display: block;
+      padding: 0px 10px;
+      height: 7vw;
+      line-height: 60px;
+      font-size: 2.5vw;
+    }
+
+    #primary_nav_wrap ul
+    {
+      left: 0%;
+    }
+
+    #primary_nav_wrap ul a
+    {
+      font-size: 3.5vw;
+    }
+  }
+
+  @media screen and (min-width: 760px) {
+    .home-hero {
+      background-color: lightblue;
+      height: 50vw;
+      background-size: cover;
+    }
+  }
+
+  /* home hero */
+  .container {
+    position: absolute;
+    height: 50vw;
+  }
+
+  .color {
+    display: block;
+    width: 100%;
+    height: 50vw;
+  }
+
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255, 0.3);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+  }
+
+  .container:hover .overlay {
+    width: 100%;
+  }
+
+  .title h1{
+    text-align: center;
+    text-decoration: none !important;
+    color: black;
+    font-size: 3vw;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-weight: 300;
+  }
+
+  .text p{
+    text-decoration: none !important;
+    color: #151515;
+    font-size: 2vw;
+    position: absolute;
+    width: 80%;
+    top: 32%;
+    left: 10%;
+    font-weight: 300;
+  }
+
+  .column-1 .color{
+    display: block;
+    background-color: #06325A;
+  }
+
+  .column-2 .color{
+    display: block;
+    background-color: #FFC870;
+  }
+
+  .column-3 .color{
+    display: block;
+    background-color: #EEAAC9;
+  }
+
+  .column-4 .color{
+    display: block;
+    background-color: #8E3D3D;
+  }
+
+  @media screen and (min-width: 760px) {
+    .column-1 {
+      position: absolute;
+      left: 0vw;
+      width: 27.5vw;
+    }
+
+    .column-2 {
+      position: absolute;
+      left: 25vw;
+      width: 27.5vw;
+    }
+
+    .column-3 {
+      position: absolute;
+      left: 50vw;
+      width: 27.5vw;
+    }
+
+    .column-4 {
+      position: absolute;
+      left: 75vw;
+      width: 27.5vw;
+    }
+
+    .text p{
+      font-size: 1.3vw;
+    }
+  }
+
+  @media screen and (max-width: 760px) {
+    .column-1 {
+      display: block;
+      background-color: #06325A;
+      float: left;
+      width: 100%;
+      height: 50vw;
+    }
+
+    .column-2 {
+      display: block;
+      background-color: #FFC870;
+      float: left;
+      width: 100%;
+      height: 50vw;
+    }
+
+    .column-3 {
+      display: block;
+      background-color: #EEAAC9;
+      float: left;
+      width: 100%;
+      height: 50vw;
+    }
+
+    .column-4 {
+      display: block;
+      background-color: #8E3D3D;
+      float: left;
+      width: 100%;
+      height: 50vw;
+    }
+
+    .container:hover .overlay {
+      width: 105%;
+    }
+
+    .text p{
+      font-size: 3vw;
+      top: 15%;
+    }
+
+    .title h1{
+      font-size: 4vw;
+      top: 10%;
+    }
+  }
+
+  /*footer*/
+  .home-contact {
+    font-family: 'Alata';
+    padding: 20px;
+    display: block;
+    width: 90%;
+    color: white;
+    background: #2C2626;
+    column-count: 3;
+    height: 120px;
+    align-items: center;
+    justify-content: center
+  }
+
+  .home-contact h1 {
+    top: auto;
+    position: absolute;
+    left: 30%;
+    font-size: 20px;
+  }
+
+  .contact-icons{
+    height: 2vw;
+    align-self: center;
+    border-radius: 5px;
+  }
+
+  .home-contact nav ul {
+    list-style: none;
+    position: absolute;
+    top: auto;
+  }
+
+  .home-contact nav ul li {
+    padding: 6px;
+  }
+
+  .home-contact nav ul li:hover {
+    background: #4D4A4A;
+  }
+
+  ul.col-1 {
+    left: 37%;
+  }
+
+  ul.col-2 {
+    left: 42%;
+  }
+
+  ul.col-3 {
+    left: 47%;
+  }
+
+  ul.col-4 {
+    left: 52%;
+  }
+
+  ul.col-5 {
+    left: 57%;
+  }
+
+  @media screen and (max-width: 800px) {
+    .home-contact {
+      padding: 20px;
+      column-count: 1;
+      height: 40vw;
+      font-size: 2vw;
+    }
+
+    .home-contact a {
+      padding-bottom: 2vw;
+      display: inline-block;
+      text-decoration: none;
+    }
+
+    .contact-icons{
+      height: 5vw;
+      width: 5vw;
+      align-self: center;
+    }
+
+    ul.col-1 {
+      left: 17%;
+    }
+
+    ul.col-2 {
+      left: 27%;
+    }
+
+    ul.col-3 {
+      left: 37%;
+    }
+
+    ul.col-4 {
+      left: 47%;
+    }
+
+    ul.col-5 {
+      left: 57%;
+    }
+
+    .home-contact nav ul {
+      top: auto;
+      padding-top: 10vw;
+    }
+   }
+</style>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dakota C's blog</title>
+</head>
+<header>
+  <section class="header">
+    <nav id="primary_nav_wrap">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="current-menu-item"><a href="bio.html">Bio</a>
+          <ul>
+            <li><a href="#">Education</a></li>
+            <li><a href="#">Personality</a></li>
+            <li><a href="#">Experience</a></li>
+            <li><a href="#">Interest</a></li>
+          </ul>
+        <li><a href="blog.html">Blog</a>
+          <ul>
+            <li><a href="#">Hi-Fi</a></li>
+            <li><a href="#">Code</a></li>
+            <li><a href="blog_Keyboards.">Keyboards</a></li>
+          </ul>
+        </li>
+        <li><a href="dataviz.html">DataViz Portfolio</a></li>
+      </ul>
+    </nav>
+  </section>
+</header>
+
+<body>
+  <section class="home-hero">
+    <div class='columns'>
+      <div class='column-1'>
+        <div class="container">
+          <div class="color">
+            <div class="overlay">
+              <div class="title"><h1>Education</h1></div>
+              <div class="text"><p>
+                I am currently studying in Phillips Academy, Andover.
+                I will graduate in 2023. I love self-studying and took a lot of
+                AI or data science related courses on Coursera (certificates can be
+                found on my linkedin so check it out!). :)
+              </p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='column-2'>
+        <div class="container">
+          <div class="color">
+            <div class="overlay">
+              <div class="title"><h1>Personality</h1></div>
+              <div class="text"><p>
+                A growth mindset has always been something
+                I valued. I love learning and self-improvement and make it a goal
+                to pick up a new healthy habit each month. I would also describe
+                my leadership style to be one that places importance on the
+                individual talent of each member and leans towards the democratic side.
+              </p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='column-3'>
+        <div class="container">
+          <div class="color">
+            <div class="overlay">
+              <div class="title"><h1>Experience</h1></div>
+              <div class="text"><p>
+                In School:
+                Coordinator of Coding Circle (teaching kids at the Boys and Girls
+                Club of Lawrence how to code); NEST Grant recipient for AI and Ethics
+                lab (NLP project); Founder of AI Club; Board of GIS (Gender Inclusivity in STEM)
+                Outside School:
+                AI and Big Data Team Manager Intern in <a href="http://www.thecoachingdot.com/">
+                The Coaching Dot</a>, Web Associate for <a href="https://www.papillonyouth.com/">Papillon Youth</a>,
+                Math tutor and US admissions consultant for <a href="https://iancheungsynergyed.wixsite.com/website">Synergy Education</a>.
+              </p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='column-4'>
+        <div class="container">
+          <div class="color">
+            <div class="overlay">
+              <div class="title"><h1>Interests</h1></div>
+              <div class="text"><p>
+                Outside of school, I enjoy reading about new and improved AIs
+                and watching terrible movies that are so incredibly unorthodox
+                that it makes you question its true intention. I am also a
+                massive fan of Hi-Fi audio equipment and mechanical keyboards.
+                Animated shows and books also occupy a special place in my heart,
+                as I believe that these are some of the best mediums to explore
+                social constructs and how these systems affect the world around us.
+              </p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+<footer>
+  <section class="home-contact">
+    <div>
+      <h1 class="contact-header">Contact Me!</h1>
+      <nav>
+        <div class="contact-columns">
+          <div class="containers">
+            <ul class="col-1">
+              <li><a href="https://instagram.com/dakotachang_sk?igshid=gewbqypou2tu" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" alt="instagram"
+                    class="contact-icons"></a></li>
+            </ul>
+            <ul class="col-2">
+              <li><a href="https://www.linkedin.com/in/dakota-chang-0000abcd" target="_blank"><img src="https://image.flaticon.com/icons/png/512/174/174857.png" alt="linkedin" class="contact-icons"></a></li>
+            </ul>
+            <ul class="col-3">
+              <li><a href="https://github.com/freezingMonkeys" target="_blank"><img src="https://cdn0.iconfinder.com/data/icons/shift-logotypes/32/Github-512.png" alt="github" class="contact-icons"></a></li>
+            </ul>
+            <ul class="col-4">
+              <li><a href="https://discord.gg/" target="_blank"><img src="https://yt3.ggpht.com/ytc/AAUvwngytTGNxTh-n4C6TLomue6cb2bYni4XMnzG1m0mOA=s900-c-k-c0x00ffffff-no-rj" alt="discord" class="contact-icons"></a></li>
+            </ul>
+            <ul class="col-5">
+              <li><a href="mailto:dakotacsk@gmail.com" target="_blank"><img src="https://www.google.com/gmail/about/static/images/logo-gmail.png?cache=1adba63" alt="email" class="contact-icons"></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+</footer>
+
+</html>

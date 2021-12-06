@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href='https://fonts.googleapis.com/css?family=Alata' rel='stylesheet'>
+
+<style>
+  .horizontal_line{
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    border: 0;
+    border-top: 5px solid rgba(0, 0, 0, 1);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  nav {
+    width: 100% auto;
+  }
+
+  /*top menu*/
+  nav {
+    text-align: center;
+    width: 100%;
+    background: #2C2626;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    z-index: 10;
+    display: block;
+    height: 2.7vw;
+  }
+
+  #primary_nav_wrap
+  {
+  	margin-top:0px;
+  }
+
+  #primary_nav_wrap ul
+  {
+  	list-style:none;
+  	position:absolute;
+  	float:left;
+  	margin:0;
+  	padding:0;
+    left: 65%;
+  }
+
+  #primary_nav_wrap ul a
+  {
+  	display:block;
+  	color:#FFFFFF;
+  	text-decoration:none;
+  	font-weight:100;
+  	font-size:1.4vw;
+  	line-height:32px;
+  	padding:5px 17px;
+  	font-family: 'Alata';
+  }
+
+  #primary_nav_wrap ul li
+  {
+  	position:relative;
+  	float:left;
+  	margin:0;
+  	padding:0
+  }
+
+  #primary_nav_wrap ul li.current-menu-item
+  {
+  	text-decoration: underline;
+  }
+
+  #primary_nav_wrap ul li:hover
+  {
+  	text-decoration: underline;
+  }
+
+  #primary_nav_wrap ul ul
+  {
+  	display:none;
+  	position:absolute;
+  	top:100%;
+  	left:0;
+  	background:#2C2626;
+  	padding:0
+  }
+
+  #primary_nav_wrap ul ul li
+  {
+  	float:none;
+  	width:200px
+  }
+
+  #primary_nav_wrap ul ul a
+  {
+  	line-height:120%;
+  	padding:10px 15px
+  }
+
+  #primary_nav_wrap ul ul ul
+  {
+  	top:0;
+  	left:100%;
+  }
+
+  #primary_nav_wrap ul li:hover > ul
+  {
+  	display:block;
+  }
+
+  @media screen and (max-width: 769px) {
+    nav{
+      color: #333333;
+      display: block;
+      padding: 0px 10px;
+      height: 8vw;
+      line-height: 60px;
+      font-size: 2.5vw;
+    }
+
+    #primary_nav_wrap ul
+    {
+      left: 0%;
+    }
+
+    #primary_nav_wrap ul a
+    {
+      font-size: 3.5vw;
+    }
+  }
+
+  iframe {
+    max-width: 90vw;
+    display: block;
+    margin: 0 auto;
+    background-color: #777;
+  }
+
+  .description{
+    font-size: 1.7rem;
+  }
+</style>
+
+<head>
+  <nav id="primary_nav_wrap">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="bio.html">Bio</a>
+        <ul>
+          <li><a href="#">Education</a></li>
+          <li><a href="#">Personality</a></li>
+          <li><a href="#">Experience</a></li>
+          <li><a href="#">Interest</a></li>
+        </ul>
+      <li><a href="blog.html">Blog</a>
+        <ul>
+          <li><a href="#">Hi-Fi</a></li>
+          <li><a href="#">Code</a></li>
+          <li><a href="blog_Keyboards.">Keyboards</a></li>
+        </ul>
+      </li>
+      <li class="current-menu-item"><a href="dataviz.html">DataViz Portfolio</a></li>
+    </ul>
+  </nav>
+  <title>DataViz Personal Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div
+    class="bg-image p-5 text-center shadow-1-strong rounded mb-5 text-white"
+    style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/70.jpg');"
+  >
+    <div class="container">
+      <br>
+      <h1 class="text-info">My DataViz journey</h1>
+      <br>
+      <h4 class="bg-info">This website is <mark>under construction</mark>.
+        I will be documenting my data visualization progress and journey here.</h4>
+    </div>
+    <hr class="horizontal_line">
+
+  </div>
+
+
+  <div class="container">
+    <h2>Progress Table</h2>
+    <p>This table documents the progress I have made and gives a quick overview of everything</p>
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Project Title</th>
+          <th>Summary</th>
+          <th>Authors</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>03-12-2021</td>
+          <td>17vs78</td>
+          <td>17vs78 is a challenge for us to represent 17 and 78 in creative ways.
+            Techniques were encouraged to be creative and varied from pie charts to washers.</td>
+          <td>Dakota Chang, Hadrian Reppas, Darian Zhang, Nathan Xiong</td>
+        </tr>
+        <tr>
+          <td>04-12-2021</td>
+          <td><a href="#part-whole">Part-to-Whole Comparison</a></td>
+          <td>Representing part-to-whole is the first task of a challenge. Challenges taken from the <a href='https://www.cedricscherer.com/2021/05/09/contributions-30daychartchallenge-2021/' target="_blank">30-day Chart Challenge</a>.</td>
+          <td>Dakota Chang</td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+  <div class = "part-whole">
+    <hr class="horizontal_line">
+    <div class="container">
+      <h2 class="text-success">1. Part-to-Whole Graph</h2>
+      <iframe width="600" height="371" seamless frameborder="0" scrolling="yes" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRSzXhSqn8eDT_KsPKi1R33QyfNjQj8qJFgb2eQibjlKIMINs3EgVaWK1FRc8UxQ3sS7g8s69YOS07s/pubchart?oid=658769951&amp;format=interactive"></iframe>
+      <p class="text-muted"> This chart is made by Dakota with Google Sheets, source of statistics is <a href="https://www.espn.com/soccer/match/_/gameId/605907" target="_blank">ESPN</a>.</p>
+      <p class="text-info description"> When it comes to part-to-whole comparisons, people often think of pie charts or donut charts.
+        However, while watching this football match, I realised sports statistics often use 100% stacked bar charts, which is a form of part-to-whole comparison charts,
+         so I decided to make one and demonstrate a real-life usage of these charts.</p>
+    </div>
+  </div>
+</body>
+</html>

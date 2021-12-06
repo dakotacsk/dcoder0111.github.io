@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<link href='https://fonts.googleapis.com/css?family=Alata' rel='stylesheet'>
+<style media="screen">
+  @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
+
+  * {
+    box-sizing: border-box;
+    font-family: 'Alata';
+    list-style: none;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: #2C2626;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  body {
+    margin: 0px;
+  }
+
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  nav {
+    width: 100% auto;
+  }
+
+  /*top menu*/
+  #primary_nav_wrap
+  {
+  	margin-top:0px;
+    height: 2.7vw;
+    background: #2C2626;
+    z-index: 10;
+  }
+
+  #primary_nav_wrap ul
+  {
+    z-index: 10;
+  	list-style:none;
+  	position:absolute;
+  	float:left;
+  	margin:0;
+  	padding:0;
+    left: 65%;
+  }
+
+  #primary_nav_wrap ul a
+  {
+    z-index: 10;
+  	display:block;
+  	color:#FFFFFF;
+  	text-decoration:none;
+  	font-weight:100;
+  	font-size:1.4vw;
+  	line-height:32px;
+  	padding:0 17px;
+  	font-family: 'Alata';
+  }
+
+  #primary_nav_wrap ul li
+  {
+  	position:relative;
+  	float:left;
+  	margin:0;
+  	padding:0
+  }
+
+  #primary_nav_wrap ul li.current-menu-item
+  {
+  	text-decoration: underline;
+  }
+
+  #primary_nav_wrap ul li:hover
+  {
+  	text-decoration: underline;
+  }
+
+  #primary_nav_wrap ul ul
+  {
+  	display:none;
+  	position:absolute;
+  	top:100%;
+  	left:0;
+  	background:#2C2626;
+  	padding:0
+  }
+
+  #primary_nav_wrap ul ul li
+  {
+  	float:none;
+  	width:200px
+  }
+
+  #primary_nav_wrap ul ul a
+  {
+  	line-height:120%;
+  	padding:10px 15px
+  }
+
+  #primary_nav_wrap ul ul ul
+  {
+  	top:0;
+  	left:100%;
+  }
+
+  #primary_nav_wrap ul li:hover > ul
+  {
+  	display:block;
+  }
+
+  .blog-card {
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 14vw;
+    color: black;
+    display: block;
+    background-color: white;
+    border-radius: 4px;
+    border: 5px solid white;
+  }
+
+  .blog-card_0 {
+    background-image: url('img/hi-fi.jpeg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .blog-card_1 {
+    background-image: url('img/test3.png');
+    background-size: 103%;
+    background-repeat: no-repeat;
+  }
+
+  .blog-card_2 {
+    background-image: url('img/webDesign.png');
+    background-size: 103%;
+    background-repeat: no-repeat;
+  }
+
+  @media screen and (max-width: 769px) {
+    #primary_nav_wrap
+    {
+    	margin-top:0px;
+      height: 7vw;
+      background: #2C2626;
+    }
+
+    #primary_nav_wrap ul
+    {
+      left: 0%;
+    }
+
+    #primary_nav_wrap ul a
+    {
+      font-size: 3.5vw;
+    }
+
+    .column {
+      float: left;
+      width: 100%;
+    }
+
+    .blog-card {
+      height: 55vw;
+      width: 90vw;
+      margin-left: 5vw;
+    }
+
+    .home-hero {
+      background-image: url('img/keyboardBackground.jpg');
+      height: 230vw;
+      background-size: cover;
+    }
+
+    .blog-card_0 {
+      height: 60vw;
+    }
+
+    .blog-card_1 {
+      height: 60vw;
+    }
+
+    .blog-card_2 {
+      height: 60vw;
+    }
+
+    .blog-card a {
+      text-align: center !important;
+      padding-top: 20px;
+      font-size: 10vw;
+      text-decoration: none !important;
+    }
+
+    .blog-card_0 a {
+      padding-left: 32.5vw;
+      color: black;
+      font-weight: 100;
+    }
+
+    .blog-card_1 a {
+      padding-left: 20vw;
+      color: black;
+      font-weight: 100;
+    }
+
+    .blog-card_2 a {
+      padding-left: 18vw;
+      color: black;
+      font-weight: 100;
+    }
+  }
+
+  @media screen and (min-width: 760px) {
+    .column {
+      float: left;
+      width: 33.33%;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .blog-card {
+      height: 19vw;
+      width: 32vw;
+      margin-left: 0.75vw;
+    }
+
+    .home-hero {
+      background-image: url('img/keyboardBackground.jpg');
+      height: 900px;
+      background-size: cover;
+    }
+
+    .blog-card_0 {
+      height: 18vw;
+    }
+
+    .blog-card_1 {
+      height: 18vw;
+    }
+
+    .blog-card_2 {
+      height: 18vw;
+    }
+
+    .blog-card a {
+      text-align: center !important;
+      padding-top: 10px;
+      font-size: 3vw;
+      text-decoration: none !important;
+    }
+
+    .blog-card_0 a {
+      padding-left: 12.5vw;
+      color: black;
+      font-weight: 100;
+    }
+
+    .blog-card_1 a {
+      padding-left: 8.5vw;
+      color: black;
+      font-weight: 100;
+    }
+
+    .blog-card_2 a {
+      padding-left: 8vw;
+      color: black;
+      font-weight: 100;
+    }
+  }
+
+  /*footer*/
+  .home-contact {
+    font-family: 'Alata';
+    padding: 20px;
+    display: block;
+    width: 90%;
+    color: white;
+    background: #2C2626;
+    column-count: 3;
+    height: 120px;
+    align-items: center;
+    justify-content: center
+  }
+
+  .home-contact h1 {
+    top: auto;
+    position: absolute;
+    left: 30%;
+    font-size: 20px;
+  }
+
+  .contact-icons{
+    height: 2vw;
+    align-self: center;
+    border-radius: 5px;
+  }
+
+  .home-contact nav ul {
+    list-style: none;
+    position: absolute;
+    top: auto;
+  }
+
+  .home-contact nav ul li {
+    padding: 6px;
+  }
+
+  .home-contact nav ul li:hover {
+    background: #4D4A4A;
+  }
+
+  ul.col-1 {
+    left: 37%;
+  }
+
+  ul.col-2 {
+    left: 42%;
+  }
+
+  ul.col-3 {
+    left: 47%;
+  }
+
+  ul.col-4 {
+    left: 52%;
+  }
+
+  ul.col-5 {
+    left: 57%;
+  }
+
+  @media screen and (max-width: 800px) {
+    .home-contact {
+      padding: 20px;
+      column-count: 1;
+      height: 40vw;
+      font-size: 2vw;
+    }
+
+    .home-contact a {
+      padding-bottom: 2vw;
+      display: inline-block;
+      text-decoration: none;
+    }
+
+    .contact-icons{
+      height: 5vw;
+      width: 5vw;
+      align-self: center;
+    }
+
+    ul.col-1 {
+      left: 17%;
+    }
+
+    ul.col-2 {
+      left: 27%;
+    }
+
+    ul.col-3 {
+      left: 37%;
+    }
+
+    ul.col-4 {
+      left: 47%;
+    }
+
+    ul.col-5 {
+      left: 57%;
+    }
+
+    .home-contact nav ul {
+      top: auto;
+      padding-top: 10vw;
+    }
+   }
+</style>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dakota C's blog</title>
+</head>
+<header>
+  <nav id="primary_nav_wrap">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="bio.html">Bio</a>
+      <ul>
+        <li><a href="#">Education</a></li>
+        <li><a href="#">Personality</a></li>
+        <li><a href="#">Experience</a></li>
+        <li><a href="#">Interest</a></li>
+      </ul>
+    <li class="current-menu-item"><a href="blog.html">Blog</a>
+      <ul>
+        <li><a href="#">Hi-Fi</a></li>
+        <li><a href="#">Code</a></li>
+        <li><a href="blog_Keyboards.html">Keyboards</a></li>
+      </ul>
+    </li>
+    <li><a href="dataviz.html">DataViz Portfolio</a></li>
+  </ul>
+  </nav>
+</header>
+
+<body>
+  <section class="home-hero">
+    <div class="row">
+      <div class="column">
+        <div class="blog-card">
+          <div class="blog-card_0">
+            <li><a href="#">Hi-Fi</a></li>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="blog-card">
+          <div class="blog-card_1">
+            <li><a href="blog_Keyboards.html">Keyboards</a></li>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="blog-card">
+          <div class="blog-card_2">
+            <li><a href="#">Web Design</a></li>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+<footer>
+  <section class="home-contact">
+    <div>
+      <h1 class="contact-header">Contact Me!</h1>
+      <nav>
+        <div class="contact-columns">
+          <div class="containers">
+            <ul class="col-1">
+              <li><a href="https://instagram.com/dakotachang_sk?igshid=gewbqypou2tu" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" alt="instagram"
+                    class="contact-icons"></a></li>
+            </ul>
+            <ul class="col-2">
+              <li><a href="https://www.linkedin.com/in/dakota-chang-0000abcd" target="_blank"><img src="https://image.flaticon.com/icons/png/512/174/174857.png" alt="linkedin" class="contact-icons"></a></li>
+            </ul>
+            <ul class="col-3">
+              <li><a href="https://github.com/freezingMonkeys" target="_blank"><img src="https://cdn0.iconfinder.com/data/icons/shift-logotypes/32/Github-512.png" alt="github" class="contact-icons"></a></li>
+            </ul>
+            <ul class="col-4">
+              <li><a href="https://discord.gg/" target="_blank"><img src="https://yt3.ggpht.com/ytc/AAUvwngytTGNxTh-n4C6TLomue6cb2bYni4XMnzG1m0mOA=s900-c-k-c0x00ffffff-no-rj" alt="discord" class="contact-icons"></a></li>
+            </ul>
+            <ul class="col-5">
+              <li><a href="mailto:dakotacsk@gmail.com" target="_blank"><img src="https://www.google.com/gmail/about/static/images/logo-gmail.png?cache=1adba63" alt="email" class="contact-icons"></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+</footer>
+
+</html>
