@@ -1,2 +1,2 @@
 # freezingMonkeys.github.io
-# Visit my website at [dakotac.me](dakotac.me) !
+# Visit my website at [dakotac.me](http://dakotac.me/) !
