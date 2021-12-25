@@ -144,6 +144,15 @@
     padding: 3vw;
   }
 
+  embed{
+    max-width: 80vw;
+    margin: 0 auto;
+    display: block;
+    padding: 3vw;
+    min-width: 70vw;
+    min-height: 50vw;
+  }
+
   .description{
     font-size: 1.7rem;
   }
@@ -237,13 +246,19 @@
         <tr>
           <td>08-12-2021</td>
           <td>Addison Gallery Data Visualisation</td>
-          <td>Description to be uploaded.</td>
+          <td>In this project, we explored and created a physical visualization of one part of the Addison Gallery datasets that fascinates us.</td>
           <td>Dakota Chang, Sofia Marina</td>
         </tr>
         <tr>
           <td>12-12-2021</td>
           <td>Historical Graphs</td>
           <td>Creating historical graphs is the third task of a challenge. Challenges taken from the <a href='https://www.cedricscherer.com/2021/05/09/contributions-30daychartchallenge-2021/' target="_blank">30-day Chart Challenge</a>.</td>
+          <td>Dakota Chang</td>
+        </tr>
+        <tr>
+          <td>16-12-2021</td>
+          <td>Magical Graphs</td>
+          <td>Creating magical graphs is the fourth task of a challenge. Challenges taken from the <a href='https://www.cedricscherer.com/2021/05/09/contributions-30daychartchallenge-2021/' target="_blank">30-day Chart Challenge</a>.</td>
           <td>Dakota Chang</td>
         </tr>
       </tbody>
@@ -286,7 +301,7 @@
     <div class="container">
       <h2 class="text-success">2. Pictograms</h2>
       <img src='img/UCL_WinsByCountries.png'>
-      <p class="text-muted"> Made with PyWaffle (<a href="https://github.com/freezingMonkeys/freezingMonkeysPythonTrack/blob/main/examples/UCL.ipynb" target="_blank">code</a>),
+      <p class="text-muted"> Made with PyWaffle (<a href="https://github.com/dcoder0111/dcoder0111PythonTrack/blob/main/examples/UCL.ipynb" target="_blank">code</a>),
         source from <a href="https://www.kaggle.com/johnharshith/uefa-champions-league-quarter-finals-since-1980" target="_blank">Kaggle</a>.</p>
       <p class="text-info description"> Sticking to the football theme, I looked at countries where winning teams of UCL is from and graphed it for my pictogram challenge.
         Colors inspired by respective countries's football kit.</p>
@@ -301,7 +316,8 @@
     <div class="container">
       <h2 class="text-success">Addison Gallery Data</h2>
       <img src='img/addison_data_example.png'>
-      <p class="text-muted"> Made with PyWaffle (<a href="https://github.com/freezingMonkeys/freezingMonkeysPythonTrack/blob/main/examples/AddisonData.ipynb" target="_blank">code</a>),
+      <!-- <img src='img/addison_data_example.png'> -->
+      <p class="text-muted"> Made with PyWaffle (<a href="https://github.com/dcoder0111/dcoder0111PythonTrack/blob/main/examples/AddisonData.ipynb" target="_blank">code</a>),
         source from <a href="http://accessaddison.andover.edu/" target="_blank">Addison Gallery of American Art</a>.</p>
       <p class="text-info description"> description to be uploaded</p>
     </div>
@@ -315,7 +331,7 @@
     <div class="container">
       <h2 class="text-success">2b. Pictograms</h2>
       <img src='img/news_pictogram.png'>
-      <p class="text-muted"> Made with PyWaffle (<a href="https://github.com/freezingMonkeys/freezingMonkeysPythonTrack/blob/main/examples/News_pictograms.ipynb" target="_blank">code</a>),
+      <p class="text-muted"> Made with PyWaffle (<a href="https://github.com/dcoder0111/dcoder0111PythonTrack/blob/main/examples/News_pictograms.ipynb" target="_blank">code</a>),
         source from <a href="https://www.kaggle.com/rmisra/news-category-dataset" target="_blank">Kaggle</a>.</p>
       <p class="text-info description"> description to be uploaded</p>
     </div>
@@ -334,8 +350,61 @@
     </div>
   </div>
 
+  <br>
+  <br>
+  <br>
+  <hr class="horizontal_line">
+  <div class = "magical_graph">
+    <div class="container">
+      <h2 class="text-success">4. Magical Graphs</h2>
+      <img src='img/magic.png'>
+      <p class="text-muted"> Made using matplotlib (<a href="https://deming.org/the-first-control-chart/" target="_blank">code</a>) for reference.</p>
+      <p class="text-info description">I used a movie dataset and checked out how many movies there are that relates to magic.</p>
+    </div>
+  </div>
+
+  <!-- <br>
+  <br>
+  <br>
+  <hr class="horizontal_line">
+  <div class = "line_graph">
+    <div class="container">
+      <h2 class="text-success">5. Line Graphs</h2>
+      <embed type="text/html" src="lineGraph.html">
+      <p class="text-muted"> Made using plotly and YouTube API. <a href='' target='_blank'>Code</a> linked  for reference.</p>
+      <p class="text-info description">I got the chanelId of the biggest Tech YouTubers and analysed their videos using the YouTube API. This is the views to like ratio of their videos. More information to be found in the code.</p>
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <hr class="horizontal_line">
+  <div class = "magical_graph">
+    <div class="container">
+      <h2 class="text-success">6. Experimental Graphs</h2>
+      <img src='img/wordcloud.png'>
+      <p class="text-muted"> Made using wordcloud. (<a href="" target="_blank">Code</a>) linked for reference.</p>
+      <p class="text-info description">This is a continuation of the line graph project. These are the most commonly seen words in their recent videos. More information to be found in the code.</p>
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <hr class="horizontal_line">
+  <div class = "choropleth">
+    <div class="container">
+      <h2 class="text-success">7. Distrubution Graphs</h2>
+      <embed type="text/html" src="eggData.html">
+      <p class="text-muted"> Made using plotly. (<a href="" target="_blank">Code</a>) linked for reference.</p>
+      <p class="text-info description">Description to be uploaded.</p>
+    </div>
+  </div> -->
+
   </div>
 </body>
+
 </html>
 <script>
   // function scrolldiv() {
