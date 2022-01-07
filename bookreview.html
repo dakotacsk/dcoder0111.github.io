@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<link href='https://fonts.googleapis.com/css?family=Alata' rel='stylesheet'>
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Rosario" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<style>
+  /*interactive parts*/
+  body, html {
+    height: 100%;
+  }
+
+  .parallax_1 {
+    /* padding-top:10vw; */
+    background-color: #2C2626;
+    /* The image used */
+    background-image: url('img/book_cover.png');
+
+    /* Full height */
+    height: 100%;
+    width: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: stretch;
+  }
+
+  .parallax_2 {
+    /* padding-top:10vw; */
+    background-color: #2C2626;
+    /* The image used */
+    background-image: url('img/nolongerhumancomic.png');
+
+    /* Full height */
+    height: 100%;
+    width: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: stretch;
+  }
+
+  .parallax_3 {
+    /* padding-top:10vw; */
+    background-color: #2C2626;
+    /* The image used */
+    background-image: url('img/osamu.png');
+
+    /* Full height */
+    height: 90%;
+    width: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: stretch;
+  }
+
+  .parallax_4 {
+    /* padding-top:10vw; */
+    background-color: #2C2626;
+    /* The image used */
+    background-image: url('img/dazai.png');
+
+    /* Full height */
+    height: 75%;
+    width: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: stretch;
+  }
+
+  .parallax_5 {
+    /* padding-top:10vw; */
+    background-color: #2C2626;
+    /* The image used */
+    background-image: url('img/spotify.jpeg');
+
+    /* Full height */
+    height: 100%;
+    width: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: stretch;
+  }
+
+  .parallax_6 {
+    /* padding-top:10vw; */
+    background-color: #2C2626;
+    /* The image used */
+    background-image: url('img/cyberpunk_music.jpeg');
+
+    /* Full height */
+    height: 100%;
+    width: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: stretch;
+  }
+  /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+  /* @media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  } */
+
+  @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
+
+  * {
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    list-style: none;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: #2C2626;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  body {
+    background-color: #2C2626;
+    margin: 0px;
+  }
+
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  nav {
+    width: 100% auto;
+  }
+
+  /*top menu*/
+  #primary_nav_wrap
+  {
+    margin-top:0px;
+    height: 2.7vw;
+    background: #2C2626;
+    z-index: 10;
+  }
+
+  #primary_nav_wrap ul
+  {
+    z-index: 10;
+    list-style:none;
+    position:absolute;
+    float:left;
+    margin:0;
+    padding:0;
+    left: 60%;
+  }
+
+  #primary_nav_wrap ul a
+  {
+    z-index: 10;
+    display:block;
+    color:#FFFFFF;
+    text-decoration:none;
+    font-weight:100;
+    font-size:1.4vw;
+    line-height:32px;
+    padding:0 17px;
+    font-family: 'Alata';
+  }
+
+  #primary_nav_wrap ul li
+  {
+    position:relative;
+    float:left;
+    margin:0;
+    padding:0
+  }
+
+  #primary_nav_wrap ul li.current-menu-item
+  {
+    text-decoration: underline;
+  }
+
+  #primary_nav_wrap ul li:hover
+  {
+    text-decoration: underline;
+  }
+
+  #primary_nav_wrap ul ul
+  {
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background:#2C2626;
+    padding:0
+  }
+
+  #primary_nav_wrap ul ul li
+  {
+    float:none;
+    width:200px
+  }
+
+  #primary_nav_wrap ul ul a
+  {
+    line-height:120%;
+    padding:10px 15px
+  }
+
+  #primary_nav_wrap ul ul ul
+  {
+    top:0;
+    left:100%;
+  }
+
+  #primary_nav_wrap ul li:hover > ul
+  {
+    display:block;
+  }
+
+  @media screen and (max-width: 769px) {
+    #primary_nav_wrap
+    {
+      margin-top:0px;
+      height: 7vw;
+      background: #2C2626;
+    }
+
+    #primary_nav_wrap ul
+    {
+      left: 0%;
+    }
+
+    #primary_nav_wrap ul a
+    {
+      font-size: 3.5vw;
+    }
+
+    .report_content p{
+      font-size: 5vw !important;
+    }
+
+    .parallax {
+      /* Full height */
+      height: 50%;
+      width: 100%;
+      background-size: fit;
+    }
+    .book_report_title{
+      top: 20vw !important;
+      width: 75% !important;
+    }
+  }
+
+  @media screen and (max-width: 415px) {
+    #primary_nav_wrap
+    {
+      margin-top:0px;
+      height: 12vw;
+      background: #2C2626;
+    }
+
+    body{
+      background-color: #2C2626;
+      height: 100%;
+    }
+
+    .report_content p{
+      font-size: 5vw !important;
+    }
+
+  }
+
+  /*content*/
+  .book_report_title{
+    padding: 1vw;
+    top: 50%;
+    background-color: #424950;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%; /* Need a specific value to work */
+  }
+
+  .book_report_title h1, h2{
+    font-family: 'Rosario';
+    padding: 0.7vw;
+    display:block;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    color: #F1EEF1;
+  }
+
+  .report_content{
+    padding: 0.7vw;
+    text-align: center !important;
+  }
+
+  .report_content p{
+    font-family: 'Rosario' !important;
+    font-size: 1.5vw;
+    padding: 0.7vw;
+    display:block;
+    margin: auto;
+    width: 90%;
+    text-align: center !important;
+    color: #F1EEF1;
+  }
+
+  .report_content h2{
+    font-family: 'Rosario' !important;
+    width: 100%;
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0em;
+    border-bottom: 3px solid #FFFFFF;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+    font-size: 3em;
+    width: 100%;
+  }
+
+  .report_content h2 span {
+    background:#424950;
+    padding:0 10px;
+  }
+
+  /*footer*/
+  .home-contact {
+    font-family: 'Alata';
+    padding: 20px;
+    display: block;
+    width: 90%;
+    color: white;
+    background: #2C2626;
+    column-count: 3;
+    height: 120px;
+    align-items: center;
+    justify-content: center
+  }
+
+  .home-contact h1 {
+    top: auto;
+    position: absolute;
+    left: 30%;
+    font-size: 20px;
+  }
+
+  .contact-icons{
+    height: 2vw;
+    align-self: center;
+    border-radius: 5px;
+  }
+
+  .home-contact nav ul {
+    list-style: none;
+    position: absolute;
+    top: auto;
+  }
+
+  .home-contact nav ul li {
+    padding: 6px;
+  }
+
+  .home-contact nav ul li:hover {
+    background: #4D4A4A;
+  }
+
+  ul.col-1 {
+    left: 37%;
+  }
+
+  ul.col-2 {
+    left: 42%;
+  }
+
+  ul.col-3 {
+    left: 47%;
+  }
+
+  ul.col-4 {
+    left: 52%;
+  }
+
+  ul.col-5 {
+    left: 57%;
+  }
+
+  @media screen and (max-width: 800px) {
+    .home-contact {
+      padding: 20px;
+      column-count: 1;
+      height: 40vw;
+      font-size: 2vw;
+    }
+
+    .home-contact a {
+      padding-bottom: 2vw;
+      display: inline-block;
+      text-decoration: none;
+    }
+
+    .contact-icons{
+      height: 5vw;
+      width: 5vw;
+      align-self: center;
+    }
+
+    ul.col-1 {
+      left: 17%;
+    }
+
+    ul.col-2 {
+      left: 27%;
+    }
+
+    ul.col-3 {
+      left: 37%;
+    }
+
+    ul.col-4 {
+      left: 47%;
+    }
+
+    ul.col-5 {
+      left: 57%;
+    }
+
+    .home-contact nav ul {
+      top: auto;
+      padding-top: 10vw;
+    }
+
+   }
+</style>
+
+
+  <head>
+    <meta charset="utf-8">
+    <title>Dakota C.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <header>
+    <nav id="primary_nav_wrap">
+    <ul>
+      <li class="current-menu-item"><a href="#">Home</a></li>
+      <li><a href="bio.html">Bio</a>
+        <ul>
+          <li><a href="#">Education</a></li>
+          <li><a href="#">Personality</a></li>
+          <li><a href="#">Experience</a></li>
+          <li><a href="#">Interest</a></li>
+        </ul>
+      <li><a href="blog.html">Blog</a>
+        <ul>
+          <li><a href="#">Hi-Fi</a></li>
+          <li><a href="#">Code</a></li>
+          <li><a href="blog_Keyboards.html">Keyboards</a></li>
+        </ul>
+      </li>
+      <li><a href="dataviz.html">DataViz Portfolio</a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <body>
+    <!-- <embed type="image/svg" src="book_cover.svg"> -->
+    <div class='book_report_title'>
+      <h1>A Book Report</h1>
+      <h2>By Dakota Chang</h2>
+    </div>
+
+    <div class="parallax_1"></div>
+
+
+    <div class="report_content" style="background-color:#424950">
+      <h2><span>Summary:</span></h2>
+      <p>
+        Osamu Dazai's No Longer Human is a semi-autobiography piece documenting his life and philosophy. Written and published in 1948, the narrator Oba Yozo's life takes place in pre-WWII Japan during the early 20th century. In the book, we are presented with three journals he wrote to narrate his life as a promising young man from a wealthy family. While Yōzō is popular amongst his peers, he feels isolated from society and silently suffers from his experience in life. He also implies that he has suffered from emotional and physical abuse from his father and servants. We follow the narrator through the ups and downs of his life. He cycles through growth and self-destruction as he navigates his poverty-stricken life in a conservative and rigid society. As readers, we are guided through his relationships at different stages of his life, from his best friends he fears and secretly despises to the first love that he obsesses over. His acute and precise view of human interaction and its absurdity provides him with many materials to work with, making mundane interactions exciting and insightful. Troubled by mental health issues and substance abuse, Yozo's tale lets us peek into the brilliant yet heartbreaking mind of Dazai.
+        <br>
+        No Longer Human is the last completed work of Osamu Dazai, who ended his life shortly after publishing this book. Osamu Dazai soon proved himself to be one of the most influential writers in the history of Japanese literature, with No Longer Human still ranking as the second-best-selling novel ever in Japan. No Longer Human's impact is also undebatable, adapted to different formats such as films, anime, and manga.
+      </p>
+    </div>
+
+
+    <div class="parallax_2"></div>
+    <div class="report_content" style="background-color:#424950">
+        <h2><span>Notable Quote #1</span></h2>
+        <blockquote>
+        <p>
+          <i class="quote">
+            “Whenever I was asked what I wanted my first impulse was to answer
+            "Nothing." The thought went through my mind that it didn't make any
+            difference, that nothing was going to make me happy.”
+            <footer>
+              Osamu Dazai, No Longer Human
+            </footer>
+          </i>
+        </p>
+        </blockquote>
+        <p class="quote_explanation">
+        His actions remind me of a famous quote from Confucius, "the funniest people are the saddest ones." He is very aware of his acts and intentionally makes a joke out of himself to entertain others. He also builds his self-worth upon how others view him and believes that he does not deserve a place if he is not making others laugh. However, his social awareness also shows that he is highly intelligent, able to read subtle social cues and entertain whoever he wants. In a way, that is both a gift and a curse. The narrator is charismatic but self-doubting, often speculating that others are not genuine towards him. The lack of a solid standing and view of the world makes him devalue his life, falling into the habit of questioning his reality and everything around him. This dissociation later drives him towards alcoholism and a path of self-destruction.
+        </p>
+    </div>
+    <div class="parallax_3"></div>
+
+    <div class="report_content" style="background-color:#424950">
+        <h2><span>Notable Quote #2</span></h2>
+        <blockquote>
+        <p>
+          <i class="quote">
+            “Is immaculate trustfulness a sin?""
+            <footer>
+              Osamu Dazai, No Longer Human
+            </footer>
+          </i>
+        </p>
+        </blockquote>
+        <p class="quote_explanation">
+        Dazai has hinted in the past that he was sexually abused by the servants. He is attracted to Yoshiko for her trustfulness in others, which is in a sense something he craves because he lost his trust when he was young. How would a repeat of history affect his coping?
+        </p>
+    </div>
+
+    <div class="parallax_4"></div>
+    <div class="report_content" style="background-color:#424950">
+        <h2><span>Quotes from the Reviewers</span></h2>
+        <blockquote>
+        <p>
+          <i class="quote">
+            “In a book so enamored with the inhumanity of its protagonist, it felt acutely
+            human to me, and at times, a reflection of my own life that I was not prepared to look into. ”
+            <footer>
+              Aris Pastor, <a src='https://nashuproar.org/staff_name/aris-pastor/' target="_blank">The Uproar</a>
+            </footer>
+          </i>
+        </p>
+        </blockquote>
+        <blockquote>
+        <p>
+          <i class="quote">
+            “The novel has a timeless quality: The struggle of the individual to
+            fit into a normalizing society remains just as relevant today as it
+            was at the time of writing. ”
+            <footer>
+              William Bradbury, <a src='https://www.japantimes.co.jp/culture/2014/10/25/books/book-reviews/longer-human/' target="_blank">The Japan Times</a>
+            </footer>
+          </i>
+        </p>
+        </blockquote>
+
+    </div>
+
+    <div class="parallax_5"></div>
+    <div class="report_content" style="background-color:#424950">
+      <h2><span>Yozo's Spotify</span></h2>
+      <p>Below are some songs I think he would have on his top five: <br> (swipe!)</p>
+      <embed type="text/html" src="/spotify/index.html" width="70%" height="320px">
+    </div>
+
+    <div class="parallax_5"></div>
+    <div class="report_content" style="background-color:#DD3C72">
+      <h2><span>Fun Facts!</span></h2>
+      <embed type="text/html" src="/cards/index.html" width="70%" height="600px">
+    </div>
+
+  </body>
+
+  <footer>
+    <section class="home-contact">
+      <div>
+        <h1 class="contact-header">Contact Me!</h1>
+        <nav>
+          <div class="contact-columns">
+            <div class="containers">
+              <ul class="col-1">
+                <li><a href="https://instagram.com/dakotachang_sk?igshid=gewbqypou2tu" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" alt="instagram"
+                      class="contact-icons"></a></li>
+              </ul>
+              <ul class="col-2">
+                <li><a href="https://www.linkedin.com/in/dakota-chang-0000abcd" target="_blank"><img src="https://image.flaticon.com/icons/png/512/174/174857.png" alt="linkedin" class="contact-icons"></a></li>
+              </ul>
+              <ul class="col-3">
+                <li><a href="https://github.com/dcoder0111" target="_blank"><img src="https://cdn0.iconfinder.com/data/icons/shift-logotypes/32/Github-512.png" alt="github" class="contact-icons"></a></li>
+              </ul>
+              <ul class="col-4">
+                <li><a href="https://discord.gg/" target="_blank"><img src="https://yt3.ggpht.com/ytc/AAUvwngytTGNxTh-n4C6TLomue6cb2bYni4XMnzG1m0mOA=s900-c-k-c0x00ffffff-no-rj" alt="discord" class="contact-icons"></a></li>
+              </ul>
+              <ul class="col-5">
+                <li><a href="mailto:dakotacsk@gmail.com" target="_blank"><img src="https://www.google.com/gmail/about/static/images/logo-gmail.png?cache=1adba63" alt="email" class="contact-icons"></a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+  </footer>
+
+
+</html>

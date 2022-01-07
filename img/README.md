@@ -1,1 +1,1 @@
-## these are just images
+this folder contains images for the site
