@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href='https://fonts.googleapis.com/css?family=Alata' rel='stylesheet'>
+
+<style>
+  .horizontal_line{
+    margin-top: 0rem;
+    margin-bottom: 3rem;
+    border: 0;
+    border-top: 5px solid rgba(0, 0, 0, 1);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  nav {
+    width: 100% auto;
+  }
+
+  /*top menu*/
+  nav {
+    text-align: center;
+    width: 100%;
+    background: #2C2626;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    z-index: 10;
+    display: block;
+    height: 2.7vw;
+  }
+
+  #primary_nav_wrap
+  {
+  	margin-top:0px;
+  }
+
+  #primary_nav_wrap ul
+  {
+  	list-style:none;
+  	position:absolute;
+  	float:left;
+  	margin:0;
+  	padding:0;
+    left: 60%;
+  }
+
+  #primary_nav_wrap ul a
+  {
+  	display:block;
+  	color:#FFFFFF;
+  	text-decoration:none;
+  	font-weight:100;
+  	font-size:1.4vw;
+  	line-height:32px;
+  	padding:5px 17px;
+  	font-family: 'Alata';
+  }
+
+  #primary_nav_wrap ul li
+  {
+  	position:relative;
+  	float:left;
+  	margin:0;
+  	padding:0
+  }
+
+  #primary_nav_wrap ul li.current-menu-item
+  {
+  	text-decoration: underline;
+  }
+
+  #primary_nav_wrap ul li:hover
+  {
+  	text-decoration: underline;
+  }
+
+  #primary_nav_wrap ul ul
+  {
+  	display:none;
+  	position:absolute;
+  	top:100%;
+  	left:0;
+  	background:#2C2626;
+  	padding:0
+  }
+
+  #primary_nav_wrap ul ul li
+  {
+  	float:none;
+  	width:200px
+  }
+
+  #primary_nav_wrap ul ul a
+  {
+  	line-height:120%;
+  	padding:10px 15px
+  }
+
+  #primary_nav_wrap ul ul ul
+  {
+  	top:0;
+  	left:100%;
+  }
+
+  #primary_nav_wrap ul li:hover > ul
+  {
+  	display:block;
+  }
+
+  @media screen and (max-width: 769px) {
+    nav{
+      color: #333333;
+      display: block;
+      padding: 0px 10px;
+      height: 8vw;
+      line-height: 60px;
+      font-size: 2.5vw;
+    }
+
+    #primary_nav_wrap ul
+    {
+      left: 0%;
+    }
+
+    #primary_nav_wrap ul a
+    {
+      font-size: 3.5vw;
+    }
+  }
+  @media screen and (max-width: 415px) {
+    #primary_nav_wrap{
+      margin-top:0px;
+      height: 12vw;
+      background: #2C2626;
+    }
+  }
+  iframe {
+    max-width: 90vw;
+    display: block;
+    margin: 0 auto;
+    background-color: #777;
+  }
+
+  img{
+    max-width: 80vw;
+    margin: 0 auto;
+    display: block;
+    padding: 3vw;
+  }
+
+  embed{
+    max-width: 80vw;
+    margin: 0 auto;
+    display: block;
+    padding: 3vw;
+    min-width: 70vw;
+    min-height: 50vw;
+  }
+
+  .description{
+    font-size: 1.7rem;
+  }
+</style>
+
+<head>
+  <nav id="primary_nav_wrap">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="bio.html">Bio</a>
+        <ul>
+          <li><a href="#">Education</a></li>
+          <li><a href="#">Personality</a></li>
+          <li><a href="#">Experience</a></li>
+          <li><a href="#">Interest</a></li>
+        </ul>
+      <li><a href="blog.html">Blog</a>
+        <ul>
+          <li><a href="#">Hi-Fi</a></li>
+          <li><a href="#">Code</a></li>
+          <li><a href="blog_Keyboards.">Keyboards</a></li>
+        </ul>
+      </li>
+      <li class="current-menu-item"><a href="dataviz.html">DataViz Portfolio</a></li>
+    </ul>
+  </nav>
+  <title>DataViz Personal Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div
+    class="bg-image p-5 text-center shadow-1-strong rounded mb-5 text-white"
+    style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/70.jpg');"
+  >
+    <div class="container">
+      <br>
+      <h1 class="text-info">My DataViz journey</h1>
+      <br>
+      <h4 class="bg-info">This website is <mark>under construction</mark>.
+        I will be documenting my data visualization progress and journey here.</h4>
+    </div>
+    <hr class="horizontal_line">
+
+  </div>
+
+
+  <div class="container">
+    <h2>Progress Table</h2>
+    <p>This table documents the progress I have made and gives a quick overview of everything</p>
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Project Title</th>
+          <th>Summary</th>
+          <th>Authors</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>03-12-2021</td>
+          <td>17vs78</td>
+          <td>17vs78 is a challenge for us to represent 17 and 78 in creative ways.
+            Techniques were encouraged to be creative and varied from pie charts to washers.</td>
+          <td>Dakota Chang, Hadrian Reppas, Darian Zhang, Nathan Xiong</td>
+        </tr>
+        <tr>
+          <td>04-12-2021</td>
+          <td>Part-to-Whole Comparison</td>
+          <td>Representing part-to-whole is the first task of a challenge. Challenges taken from the <a href='https://www.cedricscherer.com/2021/05/09/contributions-30daychartchallenge-2021/' target="_blank">30-day Chart Challenge</a>.</td>
+          <td>Dakota Chang</td>
+        </tr>
+        <tr>
+          <td>06-12-2021</td>
+          <td>Notes for Research Papers</td>
+          <td>These are some notes about the paper<a href="https://prism.ucalgary.ca/ds2/stream/?#/documents/10e163ca-b328-4294-97da-3f750890e719/page/1" target="_blank">
+            Considering Visual Variables as a Basis for Information Visualisation</a>.</td>
+          <td>Dakota Chang</td>
+        </tr>
+        <tr>
+          <td>07-12-2021</td>
+          <td>Pictograms</td>
+          <td>Utilising pictograms is the second task of a challenge. Challenges taken from the <a href='https://www.cedricscherer.com/2021/05/09/contributions-30daychartchallenge-2021/' target="_blank">30-day Chart Challenge</a>.</td>
+          <td>Dakota Chang</td>
+        </tr>
+        <tr>
+          <td>08-12-2021</td>
+          <td>Addison Gallery Data Visualisation</td>
+          <td>In this project, we explored and created a physical visualization of one part of the Addison Gallery datasets that fascinates us.</td>
+          <td>Dakota Chang, Sofia Marina</td>
+        </tr>
+        <tr>
+          <td>12-12-2021</td>
+          <td>Historical Graphs</td>
+          <td>Creating historical graphs is the third task of a challenge. Challenges taken from the <a href='https://www.cedricscherer.com/2021/05/09/contributions-30daychartchallenge-2021/' target="_blank">30-day Chart Challenge</a>.</td>
+          <td>Dakota Chang</td>
+        </tr>
+        <tr>
+          <td>16-12-2021</td>
+          <td>Magical Graphs</td>
+          <td>Creating magical graphs is the fourth task of a challenge. Challenges taken from the <a href='https://www.cedricscherer.com/2021/05/09/contributions-30daychartchallenge-2021/' target="_blank">30-day Chart Challenge</a>.</td>
+          <td>Dakota Chang</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class='part-whole' id="part-whole">
+    <hr class="horizontal_line">
+    <div class="container">
+      <h2 class="text-success">1. Day1: Part-to-Whole Graph</h2>
+      <iframe width="600" height="371" seamless frameborder="0" scrolling="yes" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRSzXhSqn8eDT_KsPKi1R33QyfNjQj8qJFgb2eQibjlKIMINs3EgVaWK1FRc8UxQ3sS7g8s69YOS07s/pubchart?oid=658769951&amp;format=interactive"></iframe>
+      <p class="text-muted"> This chart is made by Dakota with Google Sheets, source of statistics is <a href="https://www.espn.com/soccer/match/_/gameId/605907" target="_blank">ESPN</a>.</p>
+      <p class="text-info description"> When it comes to part-to-whole comparisons, people often think of pie charts or donut charts.
+        However, while watching this football match, I realised sports statistics often use 100% stacked bar charts, which is a form of part-to-whole comparison charts,
+         so I decided to make one and demonstrate a real-life usage of these charts.</p>
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <hr class="horizontal_line">
+  <div class='notes' id="notes">
+    <div class="container">
+      <h2 class="text-success">Notes to Research Paper:
+        <a href="https://prism.ucalgary.ca/ds2/stream/?#/documents/10e163ca-b328-4294-97da-3f750890e719/page/1" target="_blank">
+          Considering Visual Variables as a Basis for Information Visualisation</a></h2>
+      <iframe src="https://drive.google.com/file/d/1HKlCrghIW43FVzn6m3jq2uWuN07CeZuB/preview" width="640" height="480"></iframe>
+      <p class="text-muted"> These notes are made by Dakota and hosted through Google Drive.</p>
+      <p class="text-info description"> Here are some quick notes I took while reading the paper. I thought
+      the paper was very informative and fun to read, partially thanks to the great examples and graphs/tables that demonstrate its main points.</p>
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <hr class="horizontal_line">
+  <div class = "pictogram">
+    <div class="container">
+      <h2 class="text-success">2. Pictograms</h2>
+      <img src='img/UCL_WinsByCountries.png'>
+      <p class="text-muted"> Made with PyWaffle (<a href="https://github.com/dcoder0111/dcoder0111PythonTrack/blob/main/examples/UCL.ipynb" target="_blank">code</a>),
+        source from <a href="https://www.kaggle.com/johnharshith/uefa-champions-league-quarter-finals-since-1980" target="_blank">Kaggle</a>.</p>
+      <p class="text-info description"> Sticking to the football theme, I looked at countries where winning teams of UCL is from and graphed it for my pictogram challenge.
+        Colors inspired by respective countries's football kit.</p>
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <hr class="horizontal_line">
+  <div class = "Addison_Data">
+    <div class="container">
+      <h2 class="text-success">Addison Gallery Data</h2>
+      <img src='img/addison_data_example.png'>
+      <!-- <img src='img/addison_data_example.png'> -->
+      <p class="text-muted"> Made with PyWaffle (<a href="https://github.com/dcoder0111/dcoder0111PythonTrack/blob/main/examples/AddisonData.ipynb" target="_blank">code</a>),
+        source from <a href="http://accessaddison.andover.edu/" target="_blank">Addison Gallery of American Art</a>.</p>
+      <p class="text-info description"> description to be uploaded</p>
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <hr class="horizontal_line">
+  <div class = "pictogram1">
+    <div class="container">
+      <h2 class="text-success">2b. Pictograms</h2>
+      <img src='img/news_pictogram.png'>
+      <p class="text-muted"> Made with PyWaffle (<a href="https://github.com/dcoder0111/dcoder0111PythonTrack/blob/main/examples/News_pictograms.ipynb" target="_blank">code</a>),
+        source from <a href="https://www.kaggle.com/rmisra/news-category-dataset" target="_blank">Kaggle</a>.</p>
+      <p class="text-info description"> description to be uploaded</p>
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <hr class="horizontal_line">
+  <div class = "control_chart">
+    <div class="container">
+      <h2 class="text-success">3. Historical Graphs</h2>
+      <img src='img/control_chart.png'>
+      <p class="text-muted"> Hand Drawn with Notability. <a href="https://deming.org/the-first-control-chart/" target="_blank">Source</a> for reference.</p>
+      <p class="text-info description">I have always been a huge fan of quality control, and in this challenge, I recreated the first control chart to ever be made. The original version was created by Walter Andrew Shewhart, an American physicist, engineer and statistician, sometimes known as the father of statistical quality control and also related to the Shewhart cycle. His work is inspired by William Edwards Deming.</p>
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <hr class="horizontal_line">
+  <div class = "magical_graph">
+    <div class="container">
+      <h2 class="text-success">4. Magical Graphs</h2>
+      <img src='img/magic.png'>
+      <p class="text-muted"> Made using matplotlib (<a href="https://deming.org/the-first-control-chart/" target="_blank">code</a>) for reference.</p>
+      <p class="text-info description">I used a movie dataset and checked out how many movies there are that relates to magic.</p>
+    </div>
+  </div>
+
+  <!-- <br>
+  <br>
+  <br>
+  <hr class="horizontal_line">
+  <div class = "line_graph">
+    <div class="container">
+      <h2 class="text-success">5. Line Graphs</h2>
+      <embed type="text/html" src="lineGraph.html">
+      <p class="text-muted"> Made using plotly and YouTube API. <a href='' target='_blank'>Code</a> linked  for reference.</p>
+      <p class="text-info description">I got the chanelId of the biggest Tech YouTubers and analysed their videos using the YouTube API. This is the views to like ratio of their videos. More information to be found in the code.</p>
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <hr class="horizontal_line">
+  <div class = "magical_graph">
+    <div class="container">
+      <h2 class="text-success">6. Experimental Graphs</h2>
+      <img src='img/wordcloud.png'>
+      <p class="text-muted"> Made using wordcloud. (<a href="" target="_blank">Code</a>) linked for reference.</p>
+      <p class="text-info description">This is a continuation of the line graph project. These are the most commonly seen words in their recent videos. More information to be found in the code.</p>
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <hr class="horizontal_line">
+  <div class = "choropleth">
+    <div class="container">
+      <h2 class="text-success">7. Distrubution Graphs</h2>
+      <embed type="text/html" src="eggData.html">
+      <p class="text-muted"> Made using plotly. (<a href="" target="_blank">Code</a>) linked for reference.</p>
+      <p class="text-info description">Description to be uploaded.</p>
+    </div>
+  </div> -->
+
+  </div>
+</body>
+
+</html>
+<script>
+  // function scrolldiv() {
+  //   window.scrollTo(0,
+  //   findPosition(document.getElementById("notes")));
+  // }
+  // function findPosition(obj) {
+  //   var currenttop = 0;
+  //   if (obj.offsetParent) {
+  //     do {
+  //       currenttop += obj.offsetTop;
+  //     } while ((obj = obj.offsetParent));
+  //     return [currenttop];
+  //   }
+  // }
+</script>
