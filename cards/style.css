@@ -10,6 +10,13 @@ body {
   margin-top: 30px;
 }
 
+@media screen and (max-width: 415px) {
+  .slide-container {
+    width: 100% !important;
+    width: 80%;
+  }
+}
+
 .slide-container {
   margin: auto;
   width: 600px;
@@ -60,18 +67,20 @@ body {
   border-radius: 15px 15px 0px 0px;
 }
 
-.fact-card__image--giant img {
-  width: 340px;
-  position: absolute;
-  top: -30px;
-  left: -25px;
+.fact-card__image--apple_store img {
+  width: 100%;
+  height: 110%;
+  top: 0px;
+  left: 0px;
+  border-radius: 15px 15px 0px 0px;
 }
 
-.fact-card__image--goblin img {
-  width: 370px;
-  position: absolute;
-  top: -21px;
-  left: -37px;
+.fact-card__image--communist_party img {
+  width: 100%;
+  height: 110%;
+  top: 0px;
+  left: 0px;
+  border-radius: 15px 15px 0px 0px;
 }
 
 .fact-card__image--ibuse img {
@@ -97,11 +106,11 @@ body {
   color: #EE5487;
 }
 
-.fact-card__level--giant {
+.fact-card__level--apple_store {
   color: #F6901A;
 }
 
-.fact-card__level--goblin {
+.fact-card__level--communist_party {
   color: #82BB30;
 }
 

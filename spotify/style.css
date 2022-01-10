@@ -6,9 +6,13 @@
   }
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 515px) {
   p{
-    font-size: 5vw !important;
+    font-size: 3vw !important;
+  }
+
+  .container{
+    height: 100%;
   }
 }
 
@@ -41,23 +45,23 @@ body {
 }
 
 .blue {
-  background-color: #3498DB;
+  background-color: #0058B5;
 }
 
 .red {
-  background-color: #E74C3C;
+  background-color: #850101;
 }
 
 .orange {
-  background-color: #95655B;
+  background-color: #E8A956;
 }
 
 .green {
-  background-color: #104E21;
+  background-color: #156F13;
 }
 
 .purple {
-  background-color: #DD77DD;
+  background-color: #4C1D8F;
 }
 
 .relative {
