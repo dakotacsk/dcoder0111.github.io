@@ -135,6 +135,20 @@
       height: 12vw;
       background: #2C2626;
     }
+    iframe {
+      max-width: 100vw;
+      display: block;
+      margin: 0 auto;
+      background-color: #777;
+    }
+    embed{
+      max-width: 80vw;
+      margin: 0 auto;
+      display: block;
+      padding: 3vw;
+      min-width: 100vw;
+      min-height: 80vw;
+    }
   }
   iframe {
     max-width: 90vw;
@@ -308,6 +322,12 @@
           <td>27-01-2022</td>
           <td>Distrubution Graphs: Strips</td>
           <td>Creating distrubution strip graphs for is the eleventh task of a challenge. Challenges taken from the <a href='https://www.cedricscherer.com/2021/05/09/contributions-30daychartchallenge-2021/' target="_blank">30-day Chart Challenge</a>.</td>
+          <td>Dakota Chang</td>
+        </tr>
+        <tr>
+          <td>28-01-2022</td>
+          <td>Network Chart - Marvel Edition</td>
+          <td>Creating a network chart is a part of an assignment. Here I used a marvel heros and comics dataset to display the pros and cons of network charts.</td>
           <td>Dakota Chang</td>
         </tr>
       </tbody>
@@ -515,13 +535,29 @@
   <hr class="horizontal_line">
   <div class = "choropleth">
     <div class="container">
-      <h2 class="text-success">12. Distrubution Graphs - Circular</h2>
+      <h2 class="text-success">12. Distrubution Graphs - Strip</h2>
       <embed type="text/html" src="img/strip_dis.html">
       <p class="text-muted"> Made using Altair. (<a href="" target="_blank">Code</a>) linked for reference.</p>
       <p class="text-info description"> I used the classic Titanic Dataset and created an interactive chart using Altair.
       </p>
     </div>
   </div>
+
+  <br>
+  <br>
+  <br>
+  <hr class="horizontal_line">
+  <div class = "choropleth">
+    <div class="container">
+      <h2 class="text-success">Network Graphs - Famous Marvel Heros and Comic Issues</h2>
+      <div><a href='//sketchviz.com/@dcoder0111/14aaeb2b0b6818c29c5e4d6d1a4e26dd'><img src='https://sketchviz.com/@dcoder0111/14aaeb2b0b6818c29c5e4d6d1a4e26dd/9821240e85e998a9f2863ebc87239f50324f603a.sketchy.png' style='max-width: 100%;'></a><br/><span style='font-size: 80%;color:#555;'>Hosted on <a href='//sketchviz.com/' style='color:#555;'>Sketchviz</a></span></div>
+      <p class="text-muted"> Made using GraphViz. (<a href="https://github.com/dcoder0111/dcoder0111.github.io/blob/main/code/Marvel.ipynb" target="_blank">Data cleaning code</a>) linked for reference.</p>
+      <p class="text-info description"> I used a dataset from kaggle and the SketchViz library to create a network graph of the most commonly appearing heros and some classic comic issues they starred in.
+      </p>
+    </div>
+  </div>
+
+
 
   </div>
 </body>
