@@ -18,6 +18,32 @@
     width: 100% auto;
   }
 
+  button:hover,
+  button:focus {
+    background-color: #eeeeee; /* Add a dark-grey background on hover */
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.25em);
+  }
+
+  button {
+    background: none;
+    border: 2px solid;
+    font: inherit;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 2em;
+  }
+
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    font-size: 18px; /* Increase font size */
+  }
+  
   /*top menu*/
   nav {
     text-align: center;
@@ -208,7 +234,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body onload="myFunction()">
   <div
     class="bg-image p-5 text-center shadow-1-strong rounded mb-5 text-white"
     style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/70.jpg');"
@@ -224,8 +250,10 @@
 
   </div>
 
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
   <div class="container">
+    <button onclick="myFunction('correlation_graph')">Most Recent Work</button>
     <h2>Progress Table</h2>
     <p>This table documents the progress I have made and gives a quick overview of everything</p>
     <table class="table table-hover">
@@ -247,87 +275,93 @@
         </tr>
         <tr>
           <td>04-12-2021</td>
-          <td>Part-to-Whole Comparison</td>
+          <td><button onclick="myFunction('part-whole')">Part-to-Whole Comparison</button></td>
           <td>Representing part-to-whole is the first task of a challenge. Challenges taken from the <a href='https://www.cedricscherer.com/2021/05/09/contributions-30daychartchallenge-2021/' target="_blank">30-day Chart Challenge</a>.</td>
           <td>Dakota Chang</td>
         </tr>
         <tr>
           <td>06-12-2021</td>
-          <td>Notes for Research Papers</td>
+          <td><button onclick="myFunction('notes')">Notes for Research Papers</button></td>
           <td>These are some notes about the paper<a href="https://prism.ucalgary.ca/ds2/stream/?#/documents/10e163ca-b328-4294-97da-3f750890e719/page/1" target="_blank">
             Considering Visual Variables as a Basis for Information Visualisation</a>.</td>
           <td>Dakota Chang</td>
         </tr>
         <tr>
           <td>07-12-2021</td>
-          <td>Pictograms</td>
+          <td><button onclick="myFunction('pictogram')">Pictograms</button></td>
           <td>Utilising pictograms is the second task of a challenge. Challenges taken from the <a href='https://www.cedricscherer.com/2021/05/09/contributions-30daychartchallenge-2021/' target="_blank">30-day Chart Challenge</a>.</td>
           <td>Dakota Chang</td>
         </tr>
         <tr>
           <td>08-12-2021</td>
-          <td>Addison Gallery Data Visualisation</td>
+          <td><button onclick="myFunction('Addison_Data')">Addison Gallery Data Visualisation</button></td>
           <td>In this project, we explored and created a physical visualization of one part of the Addison Gallery datasets that fascinates us.</td>
           <td>Dakota Chang, Sofia Marina</td>
         </tr>
         <tr>
           <td>12-12-2021</td>
-          <td>Historical Graphs</td>
+          <td><button onclick="myFunction('control_chart')">Historical Graphs</button></td>
           <td>Creating historical graphs is the third task of a challenge. Challenges taken from the <a href='https://www.cedricscherer.com/2021/05/09/contributions-30daychartchallenge-2021/' target="_blank">30-day Chart Challenge</a>.</td>
           <td>Dakota Chang</td>
         </tr>
         <tr>
           <td>16-12-2021</td>
-          <td>Magical Graphs</td>
+          <td><button onclick="myFunction('magical_graph')">Magical Graphs</button></td>
           <td>Creating magical graphs is the fourth task of a challenge. Challenges taken from the <a href='https://www.cedricscherer.com/2021/05/09/contributions-30daychartchallenge-2021/' target="_blank">30-day Chart Challenge</a>.</td>
           <td>Dakota Chang</td>
         </tr>
         <tr>
           <td>09-01-2022</td>
-          <td>Line Graphs</td>
+          <td><button onclick="myFunction('line_graph')">Line Graphs</button></td>
           <td>Creating line graphs is the fifth task of a challenge. Challenges taken from the <a href='https://www.cedricscherer.com/2021/05/09/contributions-30daychartchallenge-2021/' target="_blank">30-day Chart Challenge</a>.</td>
           <td>Dakota Chang</td>
         </tr>
         <tr>
           <td>18-01-2022</td>
-          <td>Distrubution Graphs: Physical</td>
+          <td><button onclick="myFunction('physical_graph')">Distrubution Graphs: Physical</button></td>
           <td>Creating physical distrubution graphs for is the seventh task of a challenge. Challenges taken from the <a href='https://www.cedricscherer.com/2021/05/09/contributions-30daychartchallenge-2021/' target="_blank">30-day Chart Challenge</a>.</td>
           <td>Dakota Chang</td>
         </tr>
         <tr>
           <td>20-01-2022</td>
-          <td>Distrubution Graphs: Animals</td>
+          <td><button onclick="myFunction('animal_graph')">Distrubution Graphs: Animals</button></td>
           <td>Creating animal distrubution graphs for is the eighth task of a challenge. Challenges taken from the <a href='https://www.cedricscherer.com/2021/05/09/contributions-30daychartchallenge-2021/' target="_blank">30-day Chart Challenge</a>.</td>
           <td>Dakota Chang</td>
         </tr>
         <tr>
           <td>21-01-2022</td>
-          <td>Distrubution Graphs: Statistics</td>
+          <td><button onclick="myFunction('statistics_graph')">Distrubution Graphs: Statistics</button></td>
           <td>Creating statistical distrubution graphs for is the ninth task of a challenge. Challenges taken from the <a href='https://www.cedricscherer.com/2021/05/09/contributions-30daychartchallenge-2021/' target="_blank">30-day Chart Challenge</a>.</td>
           <td>Dakota Chang</td>
         </tr>
         <tr>
           <td>22-01-2022</td>
-          <td>Distrubution Graphs: Abstract</td>
-          <td>Creating abstract distrubution graphs for is the ninth task of a challenge. Challenges taken from the <a href='https://www.cedricscherer.com/2021/05/09/contributions-30daychartchallenge-2021/' target="_blank">30-day Chart Challenge</a>.</td>
+          <td><button onclick="myFunction('abstract_graph')">Distrubution Graphs: Abstract</button><
+        <td>Creating abstract distrubution graphs for is the ninth task of a challenge. Challenges taken from the <a href='https://www.cedricscherer.com/2021/05/09/contributions-30daychartchallenge-2021/' target="_blank">30-day Chart Challenge</a>.</td>
           <td>Dakota Chang</td>
         </tr>
         <tr>
           <td>23-01-2022</td>
-          <td>Distrubution Graphs: Circular</td>
+          <td><button onclick="myFunction('circular_graph')">Distrubution Graphs: Circular</button><
           <td>Creating statistical distrubution graphs for is the eleventh task of a challenge. Challenges taken from the <a href='https://www.cedricscherer.com/2021/05/09/contributions-30daychartchallenge-2021/' target="_blank">30-day Chart Challenge</a>.</td>
           <td>Dakota Chang</td>
         </tr>
         <tr>
           <td>27-01-2022</td>
-          <td>Distrubution Graphs: Strips</td>
-          <td>Creating distrubution strip graphs for is the eleventh task of a challenge. Challenges taken from the <a href='https://www.cedricscherer.com/2021/05/09/contributions-30daychartchallenge-2021/' target="_blank">30-day Chart Challenge</a>.</td>
+          <td><button onclick="myFunction('strip_graph')">Distrubution Graphs: Strips</button><
+          <td>Creating distrubution strip graphs for is the twelve task of a challenge. Challenges taken from the <a href='https://www.cedricscherer.com/2021/05/09/contributions-30daychartchallenge-2021/' target="_blank">30-day Chart Challenge</a>.</td>
           <td>Dakota Chang</td>
         </tr>
         <tr>
           <td>28-01-2022</td>
-          <td>Network Chart - Marvel Edition</td>
+          <td><button onclick="myFunction('network_graph')">Network Chart - Marvel Edition</button><
           <td>Creating a network chart is a part of an assignment. Here I used a marvel heros and comics dataset to display the pros and cons of network charts.</td>
+          <td>Dakota Chang</td>
+        </tr>
+        <tr>
+          <td>01-02-2022</td>
+          <td><button onclick="myFunction('correlation_graph')">Relationship Graphs: Correlation</button><
+          <td>Creating relationship correlation graphs for is the thirteenth task of a challenge. Challenges taken from the <a href='https://www.cedricscherer.com/2021/05/09/contributions-30daychartchallenge-2021/' target="_blank">30-day Chart Challenge</a>.</td>
           <td>Dakota Chang</td>
         </tr>
       </tbody>
@@ -366,7 +400,7 @@
   <br>
   <br>
   <hr class="horizontal_line">
-  <div class = "pictogram">
+  <div class = "pictogram" id="pictogram">
     <div class="container">
       <h2 class="text-success">2. Pictograms</h2>
       <img src='img/UCL_WinsByCountries.png'>
@@ -381,7 +415,7 @@
   <br>
   <br>
   <hr class="horizontal_line">
-  <div class = "Addison_Data">
+  <div class = "Addison_Data" id="Addison_Data">
     <div class="container">
       <h2 class="text-success">Addison Gallery Data</h2>
       <img src='img/addison_data_example.png'>
@@ -396,7 +430,7 @@
   <br>
   <br>
   <hr class="horizontal_line">
-  <div class = "pictogram1">
+  <div class = "pictogram1" id="pictogram1">
     <div class="container">
       <h2 class="text-success">2b. Pictograms</h2>
       <img src='img/news_pictogram.png'>
@@ -410,7 +444,7 @@
   <br>
   <br>
   <hr class="horizontal_line">
-  <div class = "control_chart">
+  <div class = "control_chart" id="control_chart">
     <div class="container">
       <h2 class="text-success">3. Historical Graphs</h2>
       <img src='img/control_chart.png'>
@@ -423,7 +457,7 @@
   <br>
   <br>
   <hr class="horizontal_line">
-  <div class = "magical_graph">
+  <div class = "magical_graph" id="magical_graph">
     <div class="container">
       <h2 class="text-success">4. Magical Graphs</h2>
       <img src='img/magic.png'>
@@ -436,7 +470,7 @@
   <br>
   <br>
   <hr class="horizontal_line">
-  <div class = "line_graph">
+  <div class = "line_graph" id="line_graph">
     <div class="container">
       <h2 class="text-success">5. Line Graphs</h2>
       <embed type="text/html" src="lineGraph.html">
@@ -449,7 +483,7 @@
   <br>
   <br>
   <hr class="horizontal_line">
-  <div class = "magical_graph">
+  <div class = "experimental_graph" id="experimental_graph">
     <div class="container">
       <h2 class="text-success">6. Experimental Graphs</h2>
       <img src='img/wordcloud.png'>
@@ -462,7 +496,7 @@
   <br>
   <br>
   <hr class="horizontal_line">
-  <div class = "choropleth">
+  <div class = "distrubution_graph" id="physical_graph">
     <div class="container">
       <h2 class="text-success">7. Distrubution Graphs - Physical</h2>
       <div class="flourish-embed flourish-sports" data-src="visualisation/8541948"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
@@ -478,7 +512,7 @@
   <br>
   <br>
   <hr class="horizontal_line">
-  <div class = "choropleth">
+  <div class = "distrubution_graph" id="animal_graph">
     <div class="container">
       <h2 class="text-success">8. Distrubution Graphs - Animals</h2>
       <embed type="text/html" src="eggData.html">
@@ -491,7 +525,7 @@
   <br>
   <br>
   <hr class="horizontal_line">
-  <div class = "choropleth">
+  <div class = "distrubution_graph" id="statistics_graph">
     <div class="container">
       <h2 class="text-success">9. Distrubution Graphs - Statistics</h2>
       <div class="flourish-embed flourish-chart" data-src="visualisation/8542136"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
@@ -505,7 +539,7 @@
   <br>
   <br>
   <hr class="horizontal_line">
-  <div class = "choropleth">
+  <div class = "distrubution_graph" id="abstract_graph">
     <div class="container">
       <h2 class="text-success">10. Distrubution Graphs - Abstract</h2>
       <div class="flourish-embed flourish-chart" data-src="visualisation/8544663"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
@@ -519,7 +553,7 @@
   <br>
   <br>
   <hr class="horizontal_line">
-  <div class = "choropleth">
+  <div class = "distrubution_graph" id="circular_graph">
     <div class="container">
       <h2 class="text-success">11. Distrubution Graphs - Circular</h2>
       <img src='img/donut_chart_classes.svg'></img>
@@ -533,7 +567,7 @@
   <br>
   <br>
   <hr class="horizontal_line">
-  <div class = "choropleth">
+  <div class = "distrubution_graph" id="strip_graph">
     <div class="container">
       <h2 class="text-success">12. Distrubution Graphs - Strip</h2>
       <embed type="text/html" src="img/strip_dis.html">
@@ -547,7 +581,7 @@
   <br>
   <br>
   <hr class="horizontal_line">
-  <div class = "choropleth">
+  <div class = "network_graph" id="network_graph">
     <div class="container">
       <h2 class="text-success">Network Graphs - Famous Marvel Heros and Comic Issues</h2>
       <div><a href='//sketchviz.com/@dcoder0111/14aaeb2b0b6818c29c5e4d6d1a4e26dd'><img src='https://sketchviz.com/@dcoder0111/14aaeb2b0b6818c29c5e4d6d1a4e26dd/9821240e85e998a9f2863ebc87239f50324f603a.sketchy.png' style='max-width: 100%;'></a><br/><span style='font-size: 80%;color:#555;'>Hosted on <a href='//sketchviz.com/' style='color:#555;'>Sketchviz</a></span></div>
@@ -557,24 +591,49 @@
     </div>
   </div>
 
-
+  <br>
+  <br>
+  <br>
+  <hr class="horizontal_line">
+  <div class = "choropleth" id="correlation_graph">
+    <div class="container">
+      <h2 class="text-success">13. Relationship Graphs - Correlation</h2>
+      <img src='img/faang_v2.gif'></img>
+      <p class="text-muted"> Made using ggplot2. <a href="https://github.com/dcoder0111/dcoder0111.github.io/blob/main/code/R_Trial.R" target="_blank">Code for graph</a>  and <a href="https://github.com/dcoder0111/dcoder0111.github.io/blob/main/code/FAANG_CLEANING.ipynb" target="_blank">data cleaning code</a> and linked for reference.</p>
+      <p class="text-info description">
+        I got stock prices data of FAANG company in 2019 from a dataset from
+        Kaggle and graphed an animated plot using R and ggplot2 to see the correlation
+        between stock prices of the biggest tech companies.
+      </p>
+    </div>
+  </div>
 
   </div>
 </body>
 
 </html>
 <script>
-  // function scrolldiv() {
-  //   window.scrollTo(0,
-  //   findPosition(document.getElementById("notes")));
-  // }
-  // function findPosition(obj) {
-  //   var currenttop = 0;
-  //   if (obj.offsetParent) {
-  //     do {
-  //       currenttop += obj.offsetTop;
-  //     } while ((obj = obj.offsetParent));
-  //     return [currenttop];
-  //   }
-  // }
+  function myFunction(element) {
+    var elmnt = document.getElementById(element);
+    elmnt.scrollIntoView();
+  }
+  //Get the button:
+  mybutton = document.getElementById("myBtn");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
 </script>
