@@ -1,0 +1,173 @@
+body{
+  margin: 0px;
+  background-color: #ffeaee;
+  max-width: 100%;
+  transform-origin: 300px center;
+}
+
+.bigSection{
+  display: box;
+  font-family: "Rosario";
+  align-content: center;
+  align-self: center;
+  width: 100%;
+}
+
+.bigSection:nth-child(odd){
+  background-color: #ddeeff;
+}
+.bigSection:nth-child(even){
+  background-color: #ffeaee;
+}
+
+@media (min-width: 930px) {
+  .bigSection{
+    padding: 0vw;
+    margin: 0;
+    width: 100%;
+    min-height: 50vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+  }
+  .resumeTitle{
+    font-size: 3em;
+    padding-left: calc(38%);
+  }
+  span{
+    background :#ee1111;
+    margin-top: 20px;
+    height: 5px;
+    align-self: center;
+    display: block;
+  }
+  .subTitle{
+    font-size: 3em;
+    padding-left: 0;
+  }
+  .resumeTitle{
+    padding-top: 50vh;
+    padding-bottom: 50vh;
+    font-family: "Rosario";
+    align-self: center;
+    max-width: 100%;
+  }
+
+  .title{
+    padding-top: 2vw;
+    font-weight: 600;
+    font-style: bold;
+    text-decoration: underline;
+  }
+
+  .workplace{
+    font-size: 1.3vw;
+  }
+
+  .location{
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1vw;
+    color: #5f5f5f;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .date{
+    font-style: italic;
+    font-size: 0.9vw;
+    color: #5f5f5f;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .subTitle{
+    font-size: 3em;
+    padding-left: 0;
+    max-width: 100%;
+  }
+
+  .content{
+    width: 100%;
+    max-width: 100%;
+    align-content: left;
+  }
+
+  .achievements_name{
+    text-decoration: underline;
+
+  }
+}
+
+@media (max-width: 930px) {
+  .bigSection{
+    padding: 0vw;
+    width: 100%;
+  }
+
+  .content{
+    align-content: left;
+    max-width: 40%;
+  }
+
+  .resumeTitle{
+    font-size: 4em;
+    padding-left: calc(0%);
+    max-width: 40%;
+  }
+
+  .title{
+    max-width: 50%;
+  }
+
+  .resumeTitle{
+    padding-top: 50vh;
+    padding-bottom: 50vh;
+    font-family: "Rosario";
+    align-self: center;
+    max-width: 100%;
+  }
+
+  .title{
+    padding-top: 1.3vw;
+    font-weight: 600;
+    font-style: bold;
+    text-decoration: underline;
+  }
+
+  .workplace{
+    font-size: 0.8vw;
+  }
+
+  .location{
+    font-weight: 300;
+    font-style: italic;
+    font-size: 0.7vw;
+    color: #5f5f5f;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .date{
+    font-style: italic;
+    font-size: 0.6vw;
+    color: #5f5f5f;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .subTitle{
+    font-size: 1em;
+    padding-left: 0;
+    max-width: 100%;
+  }
+
+  .content{
+    width: 50%;
+    max-width: 70%;
+    align-content: left;
+  }
+
+  .achievements_name{
+    text-decoration: underline;
+  }
+}
