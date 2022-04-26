@@ -41,7 +41,7 @@ $(document).ready(function() {
       id: 4,
       text: "<br> Imposter detected, lockdown mode activated.",
       paths: [
-        {target: 4, text: "<a href='/../index.html'>Restart?<a>"},
+        {target: 4, text: "<a href='/../maddaddam/index.html'>Restart?<a>"},
       ]
     },
     {
