@@ -200,7 +200,7 @@ $(document).ready(function() {
       text: "<br><br> <p style='color:#00bb00'>Are you sure?</p>",
       paths: [
         {target: 24, text: "<a href='/../maddaddam/crypt/final_level/index.html'>Unlock</a>"},
-        {target: 24, text: "<a href='index.html'>No</a>"},
+        {target: 24, text: "<a href='/../maddaddam/index.html'>No</a>"},
       ]
     },
   ]
