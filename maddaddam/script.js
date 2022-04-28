@@ -24,7 +24,7 @@ $(document).ready(function() {
   var stories = [
     {
       id: 0,
-      text: "Hello, welcome to Extincathon. Please enter your name __",
+      text: "Hello, welcome to Extincathon. Please enter your name<span>_</span>",
       paths: [
         {target: 1, text: "RedNeckCrake"},
         {target: 2, text: "New"}
@@ -47,7 +47,7 @@ $(document).ready(function() {
     },
     {
       id: 3,
-      text: "Welcome RedNeckCrake. Adam named the living animals. MaddAddam names the dead ones. Do you want to play? __",
+      text: "Welcome RedNeckCrake. Adam named the living animals. MaddAddam names the dead ones. Do you want to play? <span>_</span>",
       paths:[
         {target: 4, text: "<a href='picture.html'>Yes</a>"},
         {target: 4, text: "No"}

@@ -15,11 +15,12 @@ $(document).ready(function() {
     },
     {
       id: 1,
-      text: "<br><p>cd Desktop</p> <br></p><p style='color:#82FFFF';>crake<p>@</p><p style='color:#FF0000'>RedNeckCrake</p><p>-mbp:~$</p> <p>ls <br> <br> BlyssPlusPills_files <br>jimmy_and_me.heic <br>jimmy_files <br>oryx_files <br>protonmail.exe <br>rakunk_file.exe <br>Screenshot 2e10-01-02 02:30:43.png <br>Screenshot 2e10-04-03 08:34:31.png<br>Screenshot 2e10-05-23 10:30:56.png<br>Screenshot 2e10-07-18 00:56:12.png<br></p>",
+      text: "<p>cd Desktop</p> <br></p><p style='color:#82FFFF';>crake<p>@</p><p style='color:#FF0000'>RedNeckCrake</p><p>-mbp:~$</p> <p>ls <br> craker_progress.jpg<br>oryx_files<br>rakunk_file.exe<br>key<br>neutronemail.exe<br>ubuntu.exe<br>theExecution.mp4<br>BlyssPlusPills_files<br>jimmy_files<br>Screenshot 2e10-05-23 10:30:56.png<br>Screenshot 2e10-07-18 00:56:12.png<br></p>",
       paths: [
         {target: 2, text: "BlyssPlusPills_files"},
         {target: 12, text: "jimmy_files"},
-        {target: 19, text: "oryx_files"}
+        {target: 19, text: "oryx_files"},
+        {target: 24, text: "key"}
       ]
     },
     {
@@ -159,7 +160,7 @@ $(document).ready(function() {
       paths: [
         {target: 20, text: "oryx_bio.txt"},
         {target: 22, text: "oryx_contract.docx"},
-        {target: 16, text: "oryx_travel_plans.csv"},
+        // {target: 16, text: "oryx_travel_plans.csv"},
       ]
     },
     {
@@ -192,6 +193,14 @@ $(document).ready(function() {
       text: "<br><br> <p style='color:#00bb00'>Access granted.</p>",
       paths: [
         {target: 16, text: "<a href='oryx_contract.html'>Open oryx_contract.txt </a>"},
+      ]
+    },
+    {
+      id: 24,
+      text: "<br><br> <p style='color:#00bb00'>Are you sure?</p>",
+      paths: [
+        {target: 24, text: "<a href='/crypt/final_level/index.html'>Unlock</a>"},
+        {target: 24, text: "<a href='index.html'>No</a>"},
       ]
     },
   ]
