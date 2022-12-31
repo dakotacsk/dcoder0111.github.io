@@ -1,8 +1,8 @@
 // Select all elements with the "parallax" class
-var parallaxElements = document.querySelectorAll('.parallax');
+var parallaxElements = document.querySelectorAll(".parallax");
 
 // Add an event listener to the window object to update the parallax effect on scroll
-window.addEventListener('scroll', function() {
+window.addEventListener("scroll", function () {
   // Get the current scroll position
   var scrollTop = window.pageYOffset;
 
@@ -17,6 +17,17 @@ window.addEventListener('scroll', function() {
     // Set the new background position
     element.style.backgroundPositionY = newPos + "px";
   }
+});
+
+// Select the "has-dropdown" menu items
+var dropdownMenuItems = document.querySelectorAll(".has-dropdown");
+
+// Add an event listener to each "has-dropdown" menu item to toggle the dropdown menu on click
+dropdownMenuItems.forEach(function (menuItem) {
+  menuItem.addEventListener("click", function (event) {
+    event.preventDefault();
+    this.classList.toggle("is-active");
+  });
 });
 
 const numbers = document.querySelectorAll(".number");
@@ -39,13 +50,12 @@ numbers.forEach((number) => {
 });
 
 // Smooth scroll to anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
     e.preventDefault();
 
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth",
     });
   });
 });
-
