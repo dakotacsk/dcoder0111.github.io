@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "Gilroy-Medium", sans-serif;
+  font-family: "Gilroy-Regular", sans-serif;
 }
 
 .container {
@@ -10,14 +10,11 @@ body {
 }
 
 header {
-  background-color: rgb(0, 0, 0);
-  color: #fff;
   font-family: "Gilroy-Bold", sans-serif;
 }
 
 header .logo {
   font-family: "Playfair Display", sans-serif;
-  color: #fff;
   display: block;
   font-size: 24px;
   font-weight: bold;
@@ -30,11 +27,6 @@ nav {
   display: flex;
   justify-content: space-around;
   padding: 20px;
-}
-
-nav a:hover {
-  background-color: #fff;
-  color: rgb(0, 0, 0);
 }
 
 nav ul {
@@ -51,7 +43,6 @@ nav li {
 }
 
 nav a {
-  color: #fff;
   text-decoration: none;
   transition: background 0.3s;
   padding: 20px;
@@ -69,6 +60,8 @@ nav a {
   background-color: rgb(0, 0, 0);
   width: 100%;
   z-index: 1;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .dropdown li {
@@ -81,7 +74,6 @@ nav a {
 }
 
 #hero {
-  color: #fff;
   padding: 100px 0;
   text-align: center;
 }
@@ -98,9 +90,8 @@ nav a {
 }
 
 #hero .button {
-  background-color: #fff;
+  transition: background 0.3s;
   border: none;
-  color: rgb(0, 0, 0);
   cursor: pointer;
   display: inline-block;
   font-size: 18px;
@@ -108,13 +99,7 @@ nav a {
   text-decoration: none;
 }
 
-#hero .button:hover {
-  background-color: rgb(0, 0, 0);
-  color: #fff;
-}
-
 #by-the-numbers {
-  margin: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -146,7 +131,6 @@ nav a {
 
 .number p {
   font-size: 1.5rem;
-  color: #666;
 }
 
 main {
@@ -167,13 +151,16 @@ main {
   background-image: url("fightclub.jpeg");
 }
 
+#section2 h2 {
+  padding: 0px;
+}
 #section2 {
+  margin: 0px 40px 0px 40px;
   height: fit-content;
 }
 
 #section3 {
-  height: 100vh;
-  background-image: url("img/datascience_img.png");
+  height: fit-content;
 }
 
 #section4 {
@@ -182,7 +169,6 @@ main {
 
 #section5 {
   height: fit-content;
-  background-image: url("img/webdev_img.jpeg");
 }
 
 #section6 {
@@ -191,11 +177,15 @@ main {
 
 #section7 {
   height: fit-content;
-  background-image: url("img/decisiontree.webp");
 }
 
 #section8 {
   height: fit-content;
+  padding: 40px;
+}
+
+#section8 h2 {
+  padding: 0px;
 }
 
 section {
@@ -205,11 +195,16 @@ section {
 
 h1,
 h2 {
-  margin: 0;
+  padding-left: 40px;
   font-family: "Gilroy-Bold", sans-serif;
 }
 
+#work {
+  padding: 0px;
+}
+
 .work-section {
+  margin: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -269,8 +264,6 @@ h2 {
 }
 
 .text {
-  background-color: #04aa6d;
-  color: white;
   font-size: 16px;
   padding: 16px 32px;
   border-radius: 15%;
@@ -294,10 +287,6 @@ h2 {
 .activity p {
   font-size: 16px;
   margin: 5px 0;
-}
-
-.activity a {
-  color: aqua;
 }
 
 @media (max-width: 999px) {
@@ -350,16 +339,58 @@ footer {
 /* colors */
 
 body {
-  color: white;
+  color: rgb(0, 0, 0);
+  background-color: white;
+}
+
+header {
+  background-color: white;
+  color: black;
+}
+
+header .logo {
+  color: black;
+}
+
+nav a:hover {
   background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 nav {
-  background-color: rgb(0, 0, 0);
+  background-color: white;
 }
 
 nav li {
+  background-color: white;
+}
+
+nav a {
+  color: black;
+}
+
+#hero {
+  color: #fff;
+}
+
+#hero .button {
+  background-color: #fff;
+  color: rgb(0, 0, 0);
+}
+
+#hero .button:hover {
   background-color: rgb(0, 0, 0);
+  color: #fff;
+}
+
+.number p {
+  color: rgb(113, 113, 113);
+}
+
+/* button */
+.text {
+  background-color: #000000;
+  color: white;
 }
 
 #by-the-numbers h2 {
@@ -367,16 +398,37 @@ nav li {
 }
 
 h2 {
-  color: rgb(255, 221, 0);
+  color: rgb(0, 0, 0);
+}
+
+#section3,
+#section5,
+#section7 {
+  background-color: rgb(200, 221, 255);
+}
+
+#section2,
+#section4,
+#section6,
+#section8 {
+  background-color: white;
+}
+
+#section2 h2 {
+  margin: 0px !important;
 }
 
 .work-item {
   background-color: rgb(39, 39, 39);
 }
-/* 
-  .work-item img {
-    border-color: rgb(255, 221, 0);
-  } */
+
+#work {
+  background-color: rgb(200, 221, 255);
+}
+
+.activity a {
+  color: #606060 !important;
+}
 
 .work-item p {
   color: #fff;
