@@ -23,7 +23,6 @@
   <title>Dakota C.</title>
   <link rel="stylesheet" type="text/css" href="style_trial.css">
   <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
 
 </head>
 
@@ -34,6 +33,15 @@
       <nav>
         <ul>
           <li><a href="#section2">About Me</a></li>
+          <li class="has-dropdown">
+            <a href="#works">My Favorite Works</a>
+            <ul class="dropdown">
+              <li><a href="#section3">Data Science Journal</a></li>
+              <li><a href="#section4"> <i>No Longer Human</i> Book Report</a></li>
+              <li><a href="#section4">A Tribute to Nella Larsen</a></li>
+              <li><a href="#section5">NLP Class Curriculum</a></li>
+            </ul>
+          </li>
           <li class="has-dropdown">
             <a href="#works">My Past Works</a>
             <ul class="dropdown">
@@ -61,21 +69,25 @@
     </section>
     <section id="section2">
       <h2>ABOUT ME</h2>
-      <img src="/img/avatar_me_main.jpg" alt="me" style="height: 20vh; display: inline;"> 
-      <p style="display: inline;">Hi there! My name is Dakota and I am currently a high school student attending Phillips Academy in
-        Massachusetts. I have always been interested in the intersection of computer science and other subjects, and
-        this has led me to pursue a particular interest in data science and artificial intelligence, with a focus on
-        natural language processing for education.
+      <div class="about-me">
+        <img src="/img/avatar_me_main.jpg" alt="me" class="about-me-image">
+        <p class="about-me-text">
+          Hi there! My name is Dakota and I am currently a high school student attending Phillips Academy in
+          Massachusetts. I have always been interested in the intersection of computer science and other subjects, and
+          this has led me to pursue a particular interest in data science and artificial intelligence, with a focus on
+          natural language processing for education.
 
-        In my free time, I enjoy skating and playing the drums, as well as trying out new headphones and web development
-        projects. I have experience with a range of coding languages, including Java, Python, HTML/CSS/JS, SQL, DOT,
-        Ruby, and R, and I am also skilled in using Adobe Suite and various website builders such as WordPress, WIX, and
-        SquareSpace.
+          In my free time, I enjoy skating and playing the drums, as well as trying out new headphones and web development
+          projects. I have experience with a range of coding languages, including Java, Python, HTML/CSS/JS, SQL, DOT,
+          Ruby, and R, and I am also skilled in using Adobe Suite and various website builders such as WordPress, WIX, and
+          SquareSpace.
 
-        I grew up in Hong Kong, but am currently based in Vancouver. I am always looking for new ways to apply my
-        technical skills to make a positive impact, and I am excited to see where my interests will take me in the
-        future.</p>
-
+          I grew up in Hong Kong, but am currently based in Vancouver. I am always looking for new ways to apply my
+          technical skills to make a positive impact, and I am excited to see where my interests will take me in the
+          future.
+        </p>
+      </div>
+    
       <div id="by-the-numbers">
         <div class="number" style="background-color: rgb(113, 113, 113);">
           <h2>24</h2>
@@ -286,7 +298,7 @@
                   <div class="text">More</div>
                 </div>
 
-                <p>Title: <i>Curriculum Writer</i></p>
+                <p>Title: <i>English Class Curriculum for Natural Language Processing</i></p>
                 <p>
                   Skills: Python, A.I., Curriculum Development
                 </p>
