@@ -14,11 +14,13 @@ header {
 }
 
 header .logo {
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Gilroy-Bold", sans-serif;
+
+  /* font-family: "Playfair Display", sans-serif; */
   display: block;
-  font-size: 24px;
+  font-size: 35px;
   font-weight: bold;
-  padding: 20px;
+  padding-top: 20px;
   text-decoration: none;
 }
 
@@ -57,7 +59,7 @@ nav a {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: rgb(0, 0, 0);
+  /* background-color: rgb(0, 0, 0); */
   width: 100%;
   z-index: 1;
   padding-top: 10px;
@@ -195,6 +197,7 @@ section {
 
 h1,
 h2 {
+  font-size: 30px;
   padding-left: 40px;
   font-family: "Gilroy-Bold", sans-serif;
 }
@@ -279,8 +282,8 @@ h2 {
 
 .activity h3 {
   font-size: 18px;
+  font-family: "Gilroy-bold", sans-serif;
   font-weight: bold;
-  text-decoration: underline;
   margin: 10px 0;
 }
 
@@ -312,7 +315,7 @@ h2 {
 }
 
 footer {
-  position: fixed;
+  /* position: fixed; */
   bottom: 0;
   left: 0;
   right: 0;
@@ -353,7 +356,7 @@ header .logo {
 }
 
 nav a:hover {
-  background-color: rgb(0, 0, 0);
+  background-color: #fed141;
   color: rgb(255, 255, 255);
 }
 
@@ -387,6 +390,9 @@ nav a {
   color: rgb(113, 113, 113);
 }
 
+.activity h3 {
+  color: #fed141;
+}
 /* button */
 .text {
   background-color: #000000;
@@ -404,7 +410,7 @@ h2 {
 #section3,
 #section5,
 #section7 {
-  background-color: rgb(200, 221, 255);
+  background-color: rgb(113, 113, 113);
 }
 
 #section2,
