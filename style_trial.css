@@ -3,8 +3,11 @@ body {
   font-family: "Gilroy-Regular", sans-serif;
 }
 
+b {
+  font-family: "Gilroy-Bold", sans-serif !important;
+}
+
 .container {
-  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -23,7 +26,7 @@ header .logo {
 }
 
 nav {
-  font-family: "Gilroy-Regular", sans-serif;
+  font-family: "Gilroy-Bold", sans-serif;
   display: flex;
   justify-content: space-around;
   padding: 20px;
@@ -43,6 +46,7 @@ nav li {
 }
 
 nav a {
+  font-size: 2.5vh;
   text-decoration: none;
   transition: background 0.3s;
   padding: 20px;
@@ -322,6 +326,10 @@ h2 {
   }
 }
 
+.download {
+  font-family: "Gilroy-Bold", sans-serif;
+}
+
 footer {
   /* position: fixed; */
   bottom: 0;
@@ -364,7 +372,7 @@ header .logo {
 }
 
 nav a:hover {
-  background-color: #fed141;
+  background-color: #000;
   color: rgb(255, 255, 255);
 }
 
@@ -377,7 +385,7 @@ nav li {
 }
 
 nav a {
-  color: black;
+  color: #fed141;
 }
 
 #hero {
@@ -404,15 +412,16 @@ nav a {
 
 .about-me-image {
   height: auto; /* Set height to auto to allow the image to adjust to the size of the text */
-  max-width: 40%; /* Set a maximum width to prevent the image from becoming too large */
+  max-width: 15%; /* Set a maximum width to prevent the image from becoming too large */
 }
 
 .about-me-text {
   height: 100%;
   width: 80%; /* Set the width of the text to match the max-width of the image */
-  font-size: 3vh;
+  /* font-size: 1.5vh; */
   margin-top: 0px !important;
   padding-left: 30px;
+  line-height: 3vh;
 }
 
 @media (max-width: 900px) {
