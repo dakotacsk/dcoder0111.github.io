@@ -7,6 +7,12 @@ b {
   font-family: "Gilroy-Bold", sans-serif !important;
 }
 
+strong {
+  color: #606060;
+  font-family: "Gilroy-Bold", sans-serif !important;
+  font-size: larger;
+}
+
 .container {
   margin: 0 auto;
   padding: 0 20px;
@@ -129,8 +135,10 @@ nav a {
 }
 
 .number h2 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  /* font-family: "62DRAGZ", sans-serif; */
+  font-family: "Torque-Master", sans-serif;
 }
 
 .number p {
@@ -235,6 +243,7 @@ h2 {
 
 .work-item a {
   text-decoration: none !important;
+  color: white;
 }
 
 .work-item img {
@@ -412,16 +421,16 @@ nav a {
 
 .about-me-image {
   height: auto; /* Set height to auto to allow the image to adjust to the size of the text */
-  max-width: 15%; /* Set a maximum width to prevent the image from becoming too large */
+  max-width: 20%; /* Set a maximum width to prevent the image from becoming too large */
 }
 
 .about-me-text {
   height: 100%;
   width: 80%; /* Set the width of the text to match the max-width of the image */
-  /* font-size: 1.5vh; */
+  font-size: 20px;
   margin-top: 0px !important;
   padding-left: 30px;
-  line-height: 3vh;
+  line-height: 30px;
 }
 
 @media (max-width: 900px) {
