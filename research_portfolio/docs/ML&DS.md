@@ -16,7 +16,7 @@
 
 - **Description**: Developed a visualization tool for Q-learning and Dijkstra's algorithms, focusing on practical applications of reinforcement learning in navigation and optimization tasks.
 
-  [![dakotacsk/PIE_ShortestPathFindingVisualization - GitHub](https://gh-card.dev/repos/dakotacsk/PIE_ShortestPathFindingVisualization.svg)](https://github.com/dakotacsk/PIE_ShortestPathFindingVisualization)
+[![dakotacsk/PIE_ShortestPathFindingVisualization - GitHub](https://gh-card.dev/repos/dakotacsk/PIE_ShortestPathFindingVisualization.svg)](https://github.com/dakotacsk/PIE_ShortestPathFindingVisualization)
 
 - **Media**:
   <!-- ![Pathfinding Visualization](https://github.com/user-attachments/assets/f37a42de-7bda-4faf-a37d-b6bd30b5ae05)   -->
@@ -35,11 +35,22 @@
 
 ---
 
+### QEA2 - Laplacian Over Gaussian Operator
+
+- **Description**: Developed a Python package for edge detection using the Laplacian of Gaussian (LoG) method to demonstrate image processing concepts with a packet of teaching materials to explain the mathematical basis of LoG. Includes customizable filters, example scripts, slides, a simple paper write up, a math proof, etc.
+
+[![dakotacsk/LaplacianOverGaussianOperator - GitHub](https://gh-card.dev/repos/dakotacsk/LaplacianOverGaussianOperator.svg)](https://github.com/dakotacsk/LaplacianOverGaussianOperator)
+
+- **Media**:
+  ![An image of Olin College's Miller Academic Center with LoG applied](https://github.com/dcoder0111/QEA2_LaplacianOverGaussianOperator/blob/main/img/examples/Olin_LoG.png?raw=true)
+
+---
+
 ### Data Science Journal
 
 - **Description**: Documented data visualization projects using tools such as Python (pandas, matplotlib, etc.), Excel, and Tableau, creating interactive network graphs, animated graphs, and more.
 - **Skills**: Data Engineering, Data Visualization
-- **Link**: [Data Science Journal](../personal_portfolio/dataviz.html)
+- **Link**: [Data Science Journal](../../../personal_portfolio/dataviz.html)
 
 ---
 

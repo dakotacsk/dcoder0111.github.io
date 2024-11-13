@@ -23,7 +23,7 @@
 
 - **Description**: Created a gallery-style website inspired by Osamu Dazai's work, using parallax scrolling and striking visuals.
 - **Skills**: HTML/CSS/JavaScript
-- **Link**: [View Project](../personal_portfolio/bookreview.html)
+- **Link**: [View Project](../../../personal_portfolio/bookreview.html)
 
 ---
 
@@ -31,7 +31,7 @@
 
 - **Description**: Designed a tribute website featuring a biography, interactive timelines, and JavaScript-powered components.
 - **Skills**: HTML/CSS/JavaScript
-- **Link**: [View Tribute](../personal_portfolio/nellaLarsen/index.html)
+- **Link**: [View Tribute](../../../personal_portfolio/nellaLarsen/index.html)
 
 ---
 
@@ -39,7 +39,7 @@
 
 - **Description**: Web-based puzzle game inspired by Margaret Atwood's work, exploring techno-futuristic themes.
 - **Skills**: HTML/CSS/JavaScript
-- **Link**: [View Game](../personal_portfolio/maddaddam/index.html)
+- **Link**: [View Game](../../../personal_portfolio/maddaddam/index.html)
 
 ---
 
@@ -47,7 +47,7 @@
 
 - **Description**: Showcase of graphic design projects including movie posters, logos, and book covers.
 - **Skills**: HTML/CSS/JavaScript, Adobe Suite
-- **Link**: [View Portfolio](../personal_portfolio/artist_portfolio/index.html)
+- **Link**: [View Portfolio](../../../personal_portfolio/artist_portfolio/index.html)
 
 ---
 
@@ -59,7 +59,7 @@
 
 - **Description**: Created a decision tree and reviews for headphones, helping others find the right fit based on factors and preferences.
 - **Skills**: HTML/CSS/JavaScript, DOT (Graphviz)
-- **Link**: [View Project](../personal_portfolio/headfi)
+- **Link**: [View Project](../../../personal_portfolio/headfi)
 
 ---
 
