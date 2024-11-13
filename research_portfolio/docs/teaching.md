@@ -29,7 +29,7 @@
 - **Date**: January 16, 2022
 - **Role**: Presenter and Proposal Writer
 - **Description**: Workshop exploring AI's biases and highlighting legislative efforts to address these issues.
-- **Downloads**: [Slides](../personal_portfolio/files/SystemError_RacisminAI.pdf), [Proposal](../personal_portfolio/files/RacialBiasandAI_MLKWorkshopProposal.pdf)
+- **Downloads**: [Slides](../../../personal_portfolio/files/SystemError_RacisminAI.pdf), [Proposal](../../../personal_portfolio/files/RacialBiasandAI_MLKWorkshopProposal.pdf)
 
 ---
 

@@ -29,13 +29,13 @@
 
 ### HVAC System Optimization
 
-- **Description**: Utilized ML and physics-based modeling to optimize energy use in air handling units (AHUs), integrating data science to enhance building sustainability. Project is currently being evaluated in the physical HVAC system of a building.
+- **Description**: Utilized ML and physics-based modeling to optimize energy use in air handling units (AHUs), integrating data science to enhance building sustainability. This includes leveraging an ensemble model (GBR, LSTM, Batch-RL, etc.) to create the best result for the complex system. Project is currently being evaluated in the physical HVAC system of a building.
 - **Media**:  
   ![HVAC System Optimization](https://github.com/user-attachments/assets/8196fad9-e416-4bc8-8190-9327724c33e2)
 
 ---
 
-### QEA2 - Laplacian Over Gaussian Operator
+### Laplacian Over Gaussian Operator
 
 - **Description**: Developed a Python package for edge detection using the Laplacian of Gaussian (LoG) method to demonstrate image processing concepts with a packet of teaching materials to explain the mathematical basis of LoG. Includes customizable filters, example scripts, slides, a simple paper write up, a math proof, etc.
 

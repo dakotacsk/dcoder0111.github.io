@@ -1,5 +1,7 @@
 <!--  -->
 
+#### These are projects from a long time ago, some hyperlinks might have been removed.
+
 ---
 
 ### The Coaching Dot
