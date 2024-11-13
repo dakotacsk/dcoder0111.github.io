@@ -6,7 +6,9 @@
 
 - **Description**: Developed a Long Short-Term Memory (LSTM) model to accurately predict soccer player locations throughout an entire match, achieving a prediction accuracy within 10 meters. Benchmarked the model against various optimization methods, including Bayesian optimization and linear regression, to evaluate performance improvements and accuracy.
 
-- **Media**: ![soccer ML](/assets/img/neoviews.png)
+- **Media**:
+
+![soccer ML](https://github.com/user-attachments/assets/cb8494ab-3825-4186-8909-28bd66cb4b19)
 
 ---
 
