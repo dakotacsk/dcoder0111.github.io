@@ -1,3 +1,7 @@
+<!--  -->
+
+---
+
 ### The Coaching Dot
 
 - **Role**: Software Project Manager Intern
@@ -5,11 +9,15 @@
 - **Skills**: HTML/CSS/JavaScript, WordPress, Python (Data Science)
 - **Link**: [Visit Site](http://www.thecoachingdot.com/)
 
+---
+
 ### The Papillon, Youth Outreach
 
 - **Description**: Managed web operations for a youth outreach magazine, creating interactive online content.
 - **Skills**: HTML/CSS/JavaScript, WIX
 - **Link**: [Visit Instagram](https://www.instagram.com/papillonyouth/?hl=en)
+
+---
 
 ### No Longer Human Book Report
 
@@ -17,17 +25,23 @@
 - **Skills**: HTML/CSS/JavaScript
 - **Link**: [View Project](../personal_portfolio/bookreview.html)
 
+---
+
 ### A Tribute to Nella Larsen
 
 - **Description**: Designed a tribute website featuring a biography, interactive timelines, and JavaScript-powered components.
 - **Skills**: HTML/CSS/JavaScript
 - **Link**: [View Tribute](../personal_portfolio/nellaLarsen/index.html)
 
+---
+
 ### MaddAddam Puzzle Game
 
 - **Description**: Web-based puzzle game inspired by Margaret Atwood's work, exploring techno-futuristic themes.
 - **Skills**: HTML/CSS/JavaScript
 - **Link**: [View Game](../personal_portfolio/maddaddam/index.html)
+
+---
 
 ### Graphic Design: Artist Portfolio
 
@@ -37,13 +51,17 @@
 
 ---
 
-## Thinking Algorithmically
+## Personal
+
+---
 
 ### Headphone Reviews
 
 - **Description**: Created a decision tree and reviews for headphones, helping others find the right fit based on factors and preferences.
 - **Skills**: HTML/CSS/JavaScript, DOT (Graphviz)
 - **Link**: [View Project](../personal_portfolio/headfi)
+
+---
 
 ### 10 Superheroes from Marvel Network Graph
 
